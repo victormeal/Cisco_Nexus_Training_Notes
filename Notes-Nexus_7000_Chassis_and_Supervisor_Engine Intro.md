@@ -1,6 +1,4 @@
-# Cisco Nexus Training - Udemy Course
-
-## Notes - Nexus 7000 Chassis and Supervisor Engine Intro
+# Notes - Nexus 7000 Chassis and Supervisor Engine Intro
 
 1. Nexus Switches are product of Cisco.
 
