@@ -20,3 +20,17 @@
 - Nexus 9300 -> no modular
 - Nexus 9500 -> modular
 
+## Useful commands
+
+- Check licenses:
+`show license brief`
+
+- Check flash
+`dir bootflash://`
+
+- install license
+`install license bottflash://sup-active/file.lic`
+
+- show features enables/disable
+`show feature`
+`show feature-set `
