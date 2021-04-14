@@ -83,67 +83,67 @@ interface port-channel 20
 	- Up to 16 active ports between both vPC peers with M series LC.
 	- Up to 32 active ports between both vPC peers with F series LC.
 switch1:
-´´´
+```
 interface port-channel 201
 ! port channel id doesn't need to match
  switchport mode trunk
  switchport trunk native vlan 100
  switchport trunk allowed vlan 100-105
  vpc 201
-´´´
+```
 switch2:
-´´´
+```
 interface port-channel 201
 ! port channel id doesn't need to match
  switchport mode trunk
  switchport trunk native vlan 100
  switchport trunk allowed vlan 100-105
  vpc 201
-´´´
+```
 
 ### vPC Configuration - Overview
 switchB:
-´´´
+```
 feature vpc
 feature lacp
 
 vpc domain 10
  peer-keepalive destination 1.1.1.2 source 1.1.1.1 vrf management
-´´´
+```
 switchA:
-´´´
+```
 show run int po 1
 
 interface port-channel 1
  switchport mode trunk
  vpc peer-link
  spanning-tree port type network
-´´´
+```
 switchA:
-´´´
+```
 show run int mgmt0
 
 interface mgmt0
  ip address 1.1.1.1
-´´´
+```
 switchA:
-´´´
+```
 show run int po 201
 
 interface port-channel201
 switchport mode trunk
 switchport trunk allowed vlan 100-105
 vpc 201
-´´´
+```
 switchB:
-´´´
+```
 show run int po 201
 
 interface port-channel201
 switchport mode trunk
 switchport trunk allowed vlan 100-105
 vpc 201
-´´´
+```
 
 ## vPC Initialization
 1. VPC manager starts
@@ -157,9 +157,9 @@ vpc 201
 
 ## Troubleshooting VPC
 ### Initialization
-´´´
+```
 sh vpc
-´´´
+```
 ### vPC Consistency Check
 - Two types of global consistency checks:
 	- Type 1: All VPC port-channels will go into a suspended state.
@@ -189,7 +189,7 @@ show vpc brief
 - Useful commands:
 ```
 sh vpc consistency-parameters vpc 20
-``` 
+```
 ```
 sh vpc consistency-parameters global
 ``` 
