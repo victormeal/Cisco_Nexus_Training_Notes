@@ -203,7 +203,7 @@ sh vpc consistency-parameters global
 	- The local vPC port if it was learned on an vPC port oh the peer switch
 	- The Peer-link port if it was learned on a non vPC port (Orphan Port)
 ### Rule Number 2
-???
+![image](./images/vpc_forwarding_rule2.PNG)
 
 ### Unicast Learning
 - vPC maintains layer 2 topology synchronization via CFS.
@@ -211,4 +211,5 @@ sh vpc consistency-parameters global
 - Frames recived on the vPC-Link are not forwarded out vPC ports.
 
 ![image](./images/vpc_forwarding_unicast_learning.PNG)
+![image](./images/vpc_forwarding_unicast_learning2.PNG)
 
