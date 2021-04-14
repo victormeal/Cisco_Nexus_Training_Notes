@@ -48,11 +48,11 @@ show vpc role
 - Keep-alives can be routed over L3 infrastructure.
 - Packet Structure: UDP message on port 3200, 96 bytes long (32 byte payload), includes version, time stamp, local and remote IPs, and domain ID.
 - Default timers: interval 1sec / timeout 5s
-´´´
+```
 vpc domain 20
 peer-keepalive destination 172.26.161.201 source 172.26.161.200 vrf management
 ! default on vrf management
-´´´
+```
 #### Recommendations (in order of preference):
 1. Dedicated link(s) (1GE LC)
 2. mgmt0 interface (along with management traffic) (or use a dedicated vrf)
@@ -82,6 +82,7 @@ interface port-channel 20
 	- In case of inconsistency a VLAN or the entire port-channel may be suspended (e.g. MTU mismatch)
 	- Up to 16 active ports between both vPC peers with M series LC.
 	- Up to 32 active ports between both vPC peers with F series LC.
+
 switch1:
 ```
 interface port-channel 201
