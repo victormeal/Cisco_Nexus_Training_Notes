@@ -12,7 +12,7 @@
 - non-vPC VLAN: Any of the STP VLANs not carried over the peer-link.
 
 - orphan ports
-- single home
+- single homed devices
 
 ## vPC Configuration
 **Order does Matter!!!**
@@ -196,3 +196,19 @@ sh vpc consistency-parameters global
 ``` 
 
 ## vPC Forwarding
+### Rule Number 1
+- To achieve the "optimal usage of peer-link goal, learning on the Peer Link is such that the MAC addresses learned on a peer's vPC port are learned on "local" vPC ports instead of Peer-link.
+- This is done by disabling learning in the hardware on Peer-link ports. The MAC addresses learned on a switch's non vPC ports are notified to the peer switch via CFSoE in address update messages indicating the interface on which it is learned.
+- When the update message is received from the peer, the local switch will update the local MAC table with the destination of:
+	- The local vPC port if it was learned on an vPC port oh the peer switch
+	- The Peer-link port if it was learned on a non vPC port (Orphan Port)
+### Rule Number 2
+???
+
+### Unicast Learning
+- vPC maintains layer 2 topology synchronization via CFS.
+- Copies of flooded frames are sent across the vPC-Link in case any single homed devices are attached
+- Frames recived on the vPC-Link are not forwarded out vPC ports.
+
+
+
