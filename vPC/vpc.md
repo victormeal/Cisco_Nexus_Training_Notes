@@ -210,5 +210,5 @@ sh vpc consistency-parameters global
 - Copies of flooded frames are sent across the vPC-Link in case any single homed devices are attached
 - Frames recived on the vPC-Link are not forwarded out vPC ports.
 
-
+![image](./images/vpc_forwarding_unicast_learning.PNG)
 
