@@ -34,7 +34,7 @@ Must match with documentation:
 
 ## Upgrade
 
-## check impact
+### check impact
 `show install all impact nxos bootflash:nxos.9.3.5.bin`
 
 ### call upgrade (disruptive)
