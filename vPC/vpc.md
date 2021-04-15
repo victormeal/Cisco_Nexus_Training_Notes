@@ -4,15 +4,13 @@
 - vPC Domain: A piar of vPC switches.
 - vPC Peer: a vPC switch, one of a pair.
 - vPC member port: one of a set of ports (port channels) that form a vPC.
-- vPC: the combined port channel between the vPC peers and the downstream device.
+- vPC port-channel: the combined port channel between the vPC peers and the downstream device.
 - vPC peer-link: link used to synchronize state between vPC peer devices, must be 10GE. Control Plane comunication, sometime data traffic.
 - CFS: Cisco Fabric Services protocol, used for state synchronization and configuration validation between vPC peer devices.
 - vPC peer-keepalive link: the keepalive link between vPC peer devices. Prevent "split brain" problems, used in failure scenarios.
 - vPC VLAN: Any of the VLANs carried over the peer-link and used to communicate via vPC with a peer device.
 - non-vPC VLAN: Any of the STP VLANs not carried over the peer-link.
-
-- orphan ports
-- single homed devices
+- orphan ports: connetcion to one vPC peer only
 
 ## vPC Configuration
 **Order does Matter!!!**
@@ -56,7 +54,7 @@ peer-keepalive destination 172.26.161.201 source 172.26.161.200 vrf management
 #### Recommendations (in order of preference):
 1. Dedicated link(s) (1GE LC)
 2. mgmt0 interface (along with management traffic) (or use a dedicated vrf)
-3. As last resort, can be routed over L# infrastructure.
+3. As last resort, can be routed over L3 infrastructure.
 
 ### Peer Link
 - Peer Link carries both vPC data and control traffic between peer switches.
@@ -212,4 +210,27 @@ sh vpc consistency-parameters global
 
 ![image](./images/vpc_forwarding_unicast_learning.PNG)
 ![image](./images/vpc_forwarding_unicast_learning2.PNG)
+![image](./images/vpc_forwarding_unicast_learning2.PNG)
 
+### Multicast with VPC
+![image](./images/vpc_multicast.PNG)
+
+???
+
+
+## vPC Roles
+![image](./images/vpc_roles.PNG)
+![image](./images/vpc_roles2.PNG)
+
+## Spanning-Tree
+![image](./images/vpc_spanntree.PNG)
+![image](./images/vpc_spanntree2.PNG)
+
+## vPC and Layer 3
+![image](./images/vpc_and_L3.PNG)
+![image](./images/vpc_and_L32.PNG)
+![image](./images/vpc_and_L33.PNG)
+![image](./images/vpc_and_L34.PNG)
+
+## vPc and FHRP
+![image](./images/vpc_fhrp.PNG)
