@@ -2,7 +2,7 @@
 
 ## Components of vPC
 
-![image](./images/vpc_components.PNG)
+![image](./images/vpc_components.png)
 
 - vPC: The combined port-channel between the vPC peers and the downstream device. A vPC is a L2 port type: switchport mode trunk or switchport mode access
  
