@@ -1,4 +1,4 @@
-#vPC Basic Config
+# vPC Basic Config
 
 ## Left device
 ```
@@ -46,6 +46,7 @@ channel-group 20 mode active
 !channel-group 20 force mode active
 no sh
 ```
+---
 ## Right Device
 ```
 config t
@@ -92,7 +93,7 @@ channel-group 20 mode active
 !channel-group 20 force mode active
 no sh
 ```
-
+---
 ## Third Device
 ```
 config t
@@ -121,7 +122,7 @@ no sh
 
 ```
 
-
+---
 ## Show Commands
 ```
 show vpc
