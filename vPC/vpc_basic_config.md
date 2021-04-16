@@ -146,3 +146,8 @@ sh vpc consistency-parameters int po 20
 ```
 sh vdc
 ```
+```
+show ip arp
+show mac address-table
+```
+
