@@ -127,6 +127,7 @@ no sh
 ```
 show vpc
 show vpc brief
+show port-channel summary
 ```
 ```
 show vpc role
