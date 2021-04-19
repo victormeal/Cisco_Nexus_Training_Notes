@@ -573,7 +573,7 @@ config t
  peer-gateway
  ```
  - For neighbor problems add **layer3 router**:
- -  ```
+ ```
  config t
  vpc domain ?
  peer-gateway
