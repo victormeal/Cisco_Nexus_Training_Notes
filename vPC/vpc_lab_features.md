@@ -4,6 +4,45 @@
 ## Basic Config (without features)
 
 ### Nexus_E
+Basic Config (creating port-channel)
+```
+config t
+feature lacp
+feature interface-vlan
+
+vlan 20
+int vlan 20
+ip add 20.20.20.30/24
+no sh
+
+int e1/3, e1/7
+channel-group 21 mode active
+! channel-group 21 force mode active
+no sh
+int po 21
+sw
+sw mode access
+sw access vlan 20
+no sh
+```
+Check port-channel
+```
+nexus_E(config-if)# sh port-chann sum
+Flags:  D - Down        P - Up in port-channel (members)
+        I - Individual  H - Hot-standby (LACP only)
+        s - Suspended   r - Module-removed
+        b - BFD Session Wait
+        S - Switched    R - Routed
+        U - Up (port-channel)
+        p - Up in delay-lacp mode (member)
+        M - Not in use. Min-links not met
+--------------------------------------------------------------------------------
+Group Port-       Type     Protocol  Member Ports
+      Channel
+--------------------------------------------------------------------------------
+21    Po21(SU)    Eth      LACP      Eth1/3(P)    Eth1/7(P)    
+nexus_E(config-if)# 
+```
 
 ### Nexus_F
 ```
@@ -72,6 +111,19 @@ id    Port   Status Active vlans
          
 nexus_F(config-if)# 
 ```
+Adding a device (Nexus_F)
+```
+ config t
+    int e1/3
+    channel-group 21 mode active
+    exit
+    int po 21
+    sw
+      sw mode access
+      sw access vlan 20
+      vpc 21
+      no sh
+```
 
 ### Nexus_G
 Basic Config
@@ -139,6 +191,19 @@ id    Port   Status Active vlans
 1     Po20   up     20                                                          
          
 nexus_G(config-if)# 
+```
+Adding a device (Nexus_F)
+```
+ config t
+    int e1/3
+    channel-group 21 mode active
+    exit
+    int po 21
+    sw
+      sw mode access
+      sw access vlan 20
+      vpc 21
+      no sh
 ```
 
 ### Nexus_H
