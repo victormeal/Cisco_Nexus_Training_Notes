@@ -615,3 +615,8 @@ config t
  ```
  ethanalyzer local interface inband display-filter STP limit-captured-frames 20
  ```
+```
+show mac address-table
+show cdp nei
+show ip arp
+```
