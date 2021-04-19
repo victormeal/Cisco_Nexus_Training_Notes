@@ -6,8 +6,140 @@
 ### Nexus_E
 
 ### Nexus_F
+```
+config t
+
+feature vpc
+feature lacp
+feature interface-vlan
+
+vlan 20
+int vlan 20
+ip add 20.20.20.10/24
+no sh
+exit
+
+vpc domain 2
+peer-keepalive destination 10.88.174.14 source 10.88.174.13 vrf management
+role priority 100
+exit
+
+!peer-link
+int e1/7
+channel-group 20 mode active
+no sh
+exit
+!
+int po 20
+sw
+sw mode trunk
+sw trunk allowed vlan 20
+vpc peer-link
+! bridge assurance enable by default or...
+!spann port type network
+no sh
+```
+Check vpc
+```
+nexus_F(config-if)# sh vpc
+Legend:
+                (*) - local vPC is down, forwarding via vPC peer-link
+
+vPC domain id                     : 2   
+Peer status                       : peer adjacency formed ok      
+vPC keep-alive status             : peer is alive                 
+Configuration consistency status  : success 
+Per-vlan consistency status       : success                       
+Type-2 consistency status         : failed  
+Type-2 inconsistency reason       : QoSMgr Network QoS configuration incompatibl
+e
+vPC role                          : primary                       
+Number of vPCs configured         : 0   
+Peer Gateway                      : Disabled
+Dual-active excluded VLANs        : -
+Graceful Consistency Check        : Enabled
+Auto-recovery status              : Disabled
+Delay-restore status              : Timer is on.(timeout = 30s, 26s left)
+Delay-restore SVI status          : Timer is off.(timeout = 10s)
+Operational Layer3 Peer-router    : Disabled
+Virtual-peerlink mode             : Disabled
+
+vPC Peer-link status
+---------------------------------------------------------------------
+id    Port   Status Active vlans    
+--    ----   ------ -------------------------------------------------
+1     Po20   up     20                                                          
+         
+nexus_F(config-if)# 
+```
 
 ### Nexus_G
+Basic Config
+```
+config t
+
+feature vpc
+feature lacp
+feature interface-vlan
+
+vlan 20
+int vlan 20
+ip add 20.20.20.20/24
+no sh
+exit
+
+vpc domain 2
+peer-keepalive destination 10.88.174.13 source 10.88.174.14 vrf management
+role priority 110
+exit
+
+!peer-link
+int e1/4
+channel-group 20 mode active
+no sh
+exit
+!
+int po 20
+sw
+sw mode trunk
+sw trunk allowed vlan 20
+vpc peer-link
+! bridge assurance enable by default or...
+!spann port type network
+no sh
+```
+Check vpc
+```
+nexus_G(config-if)# sh vpc
+Legend:
+                (*) - local vPC is down, forwarding via vPC peer-link
+
+vPC domain id                     : 2   
+Peer status                       : peer adjacency formed ok      
+vPC keep-alive status             : peer is alive                 
+Configuration consistency status  : success 
+Per-vlan consistency status       : success                       
+Type-2 consistency status         : failed  
+Type-2 inconsistency reason       : QoSMgr Qos configuration incompatible
+vPC role                          : secondary                     
+Number of vPCs configured         : 0   
+Peer Gateway                      : Disabled
+Dual-active excluded VLANs        : -
+Graceful Consistency Check        : Enabled
+Auto-recovery status              : Disabled
+Delay-restore status              : Timer is off.(timeout = 30s)
+Delay-restore SVI status          : Timer is off.(timeout = 10s)
+Operational Layer3 Peer-router    : Disabled
+Virtual-peerlink mode             : Disabled
+
+vPC Peer-link status
+---------------------------------------------------------------------
+id    Port   Status Active vlans    
+--    ----   ------ -------------------------------------------------
+1     Po20   up     20                                                          
+         
+nexus_G(config-if)# 
+```
 
 ### Nexus_H
 Basic Config
