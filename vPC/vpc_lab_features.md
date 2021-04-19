@@ -611,3 +611,7 @@ config t
  peer-gateway
  layer 3 router
  ```
+ - CPU packet capture
+ ```
+ ethanalyzer local interface inband display-filter STP limit-captured-frames 20
+ ```
