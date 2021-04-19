@@ -21,6 +21,7 @@ feature interface-vlan
 vlan 10
 int vlan 10
 ip add 10.10.10.10/24
+no sh
 exit
 
 vpc domain 1
@@ -102,6 +103,7 @@ feature interface-vlan
 vlan 10
 int vlan 10
 ip add 10.10.10.20/24
+no sh
 exit
 
 vpc domain 1
