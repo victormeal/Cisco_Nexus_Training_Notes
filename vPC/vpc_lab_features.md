@@ -463,3 +463,104 @@ Group Port-       Type     Protocol  Member Ports
 11    Po11(SU)    Eth      LACP      Eth1/6(P)    Eth1/8(P)    
 nexus_J# 
 ```
+
+## Routing Config
+
+### Nexus_E
+```
+config t
+    feature ospf
+    router ospf 1
+      router-id 20.20.20.30
+    exit
+    int vlan 20
+      ip router ospf 1 area 2
+      
+show ip ospf nei
+```
+### Nexus_F
+```
+config t
+    feature ospf
+    router ospf 1
+      router-id 20.20.20.10
+    exit
+    int vlan 20
+      ip router ospf 1 area 2
+       exit
+    int vlan 1
+      ip add 1.1.2.10/16
+      ip route ospf 1 area 0
+      no sh
+ 
+ show ip ospf nei
+ ```
+### Nexus_G
+```
+config t
+    feature ospf
+    router ospf 1
+      router-id 20.20.20.20
+    exit
+    int vlan 20
+      ip router ospf 1 area 2
+      exit
+    int vlan 1
+      ip add 1.1.2.20/16
+      ip route ospf 1 area 0
+      no sh
+      
+      
+      
+ show ip ospf nei
+ ```
+### Nexus_H
+```
+config t
+    feature ospf
+    router ospf 1
+      router-id 10.10.10.10
+    exit
+    int vlan 10
+      ip router ospf 1 area 1
+      exit
+    int vlan 1
+      ip add 1.1.1.10/16
+      ip route ospf 1 area 0
+      no sh
+      
+      
+ show ip ospf nei
+ ```
+### Nexus_I
+```
+config t
+    feature ospf
+    router ospf 1
+      router-id 10.10.10.20
+    exit
+    int vlan 10
+      ip router ospf 1 area 1
+      exit
+    int vlan 1
+      ip add 1.1.1.20/16
+      ip route ospf 1 area 0
+      no sh
+      
+      
+ show ip ospf nei
+ ```
+### Nexus_J
+```
+config t
+    feature ospf
+    router ospf 1
+      router-id 10.10.10.30
+    exit
+    int vlan 10
+      ip router ospf 1 area 1
+      exit
+      
+  
+ show ip ospf nei
+ ```
