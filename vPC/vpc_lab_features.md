@@ -564,3 +564,18 @@ config t
   
  show ip ospf nei
  ```
+ ### Troubleshooting
+ Is possible that we have trouble making the ospf neighbors or making the pings.
+ - For ping problems add **peer-gateway**:
+ ```
+ config t
+ vpc domain ?
+ peer-gateway
+ ```
+ - For neighbor problems add **layer3 router**:
+ -  ```
+ config t
+ vpc domain ?
+ peer-gateway
+ layer 3 router
+ ```
