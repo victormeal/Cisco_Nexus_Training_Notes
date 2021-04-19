@@ -1,4 +1,36 @@
 # vPC LAB
+ ## vPC Features vPC 
+- **Peer-switch**: allows a pair of vPC peer devices to appear as a single Spanning Tree 
+Protocol root in the Layer 2 topology (they have the same bridge ID). vPC peer-switch must be configured on both 
+vPC peer devices to become operational.
+        - avoid STP problems
+        - both switches send BPDUs
+        - Nexus needs to be the root
+```
+ config t
+ vpc domain ?
+ peer-switch
+```
+- **Bridge Assurance**: causes the switch to send BPDUs on all operational ports that carry a STP port type setting of 
+"network", including alternate and backup ports for each hello time period. If a neighbor port stops receiving 
+BPDUs, the port is moved into the blocking state. If the blocked port begins receiving BPDUs again, it is removed 
+from bridge assurance blocking state, and goes through normal Rapid-PVST transition.  
+
+- **PeerGateway**: allows a vPC peer device to act as the active gateway for packets addressed to the other peer 
+device router MAC. It keeps the forwarding of traffic local to the vPC peer device and avoids use of the peer-link
+ ```
+ config t
+ vpc domain ?
+ peer-gateway
+ ```
+- **Layer3 router**: support routing over VPC, don't reduce the TTL.
+ ```
+ config t
+ vpc domain ?
+ peer-gateway
+ layer 3 router
+ ```
+
 ## Topology
 ???
 ## Basic Config (without features)
@@ -564,40 +596,7 @@ config t
   
  show ip ospf nei
  ```
- ## vPC Features vPC 
-- **Peer-switch**: allows a pair of vPC peer devices to appear as a single Spanning Tree 
-Protocol root in the Layer 2 topology (they have the same bridge ID). vPC peer-switch must be configured on both 
-vPC peer devices to become operational.
-        - avoid STP problems
-        - both switches send BPDUs
-        - Nexus needs to be the root
-```
- config t
- vpc domain ?
- peer-switch
-```
-- **Bridge Assurance**: causes the switch to send BPDUs on all operational ports that carry a STP port type setting of 
-"network", including alternate and backup ports for each hello time period. If a neighbor port stops receiving 
-BPDUs, the port is moved into the blocking state. If the blocked port begins receiving BPDUs again, it is removed 
-from bridge assurance blocking state, and goes through normal Rapid-PVST transition.  
-
-- **PeerGateway**: allows a vPC peer device to act as the active gateway for packets addressed to the other peer 
-device router MAC. It keeps the forwarding of traffic local to the vPC peer device and avoids use of the peer-link
- ```
- config t
- vpc domain ?
- peer-gateway
- ```
-- **Layer3 router**: support routing over VPC, don't reduce the TTL.
- ```
- config t
- vpc domain ?
- peer-gateway
- layer 3 router
- ```
-
- 
- ## Troubleshooting 
+## Troubleshooting 
  Is possible that we have trouble making the ospf neighbors or making the pings.
  - For ping problems add **peer-gateway**:
  ```
