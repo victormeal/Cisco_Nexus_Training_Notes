@@ -72,7 +72,7 @@ exit
 int po 20
 sw
 sw mode trunk
-sw trunk allowed vlan 20
+sw trunk allowed vlan 1,20
 vpc peer-link
 ! bridge assurance enable by default or...
 !spann port type network
@@ -124,6 +124,20 @@ Adding a device (Nexus_F)
       vpc 21
       no sh
 ```
+Adding a device (vpc1 double-side)
+```
+ config t
+ int e1/5,e1/8
+ channel-group 1 mode active
+ exit
+ int po 1
+ sw
+ sw mode trunk
+ sw trunk allowed vlan 1
+ vpc 1
+ no sh
+```
+
 
 ### Nexus_G
 Basic Config
@@ -154,7 +168,7 @@ exit
 int po 20
 sw
 sw mode trunk
-sw trunk allowed vlan 20
+sw trunk allowed vlan 1,20
 vpc peer-link
 ! bridge assurance enable by default or...
 !spann port type network
@@ -205,6 +219,19 @@ Adding a device (Nexus_F)
       vpc 21
       no sh
 ```
+Adding a device (vpc1 double-side)
+```
+ config t
+ int e1/5,e1/7
+ channel-group 1 mode active
+ exit
+ int po 1
+ sw
+ sw mode trunk
+ sw trunk allowed vlan 1
+ vpc 1
+ no sh
+```
 
 ### Nexus_H
 Basic Config
@@ -235,7 +262,7 @@ exit
 int po 10
 sw
 sw mode trunk
-sw trunk allowed vlan 10
+sw trunk allowed vlan 1,10
 vpc peer-link
 ! bridge assurance enable by default or...
 !spann port type network
@@ -287,6 +314,19 @@ Adding a device (Nexus_J)
       vpc 11
       no sh
 ```
+Adding a device (vpc2 double-side)
+```
+  config t
+ int e1/4,e1/7
+ channel-group 1 mode active
+ exit
+ int po 1
+ sw
+ sw mode trunk
+ sw trunk allowed vlan 1
+ vpc 1
+ no sh
+```
 
 ### Nexus_I
 Basic Config
@@ -317,7 +357,7 @@ exit
 int po 10
 sw
 sw mode trunk
-sw trunk allowed vlan 10
+sw trunk allowed vlan 1,10
 vpc peer-link
 ! bridge assurance enable by default or...
 !spann port type network
@@ -368,6 +408,19 @@ Adding a device (Nexus_J)
       sw access vlan 10
       vpc 11
       no sh
+```
+Adding a device (vpc2 double-side)
+```
+   config t
+ int e1/4,e1/7
+ channel-group 1 mode active
+ exit
+ int po 1
+ sw
+ sw mode trunk
+ sw trunk allowed vlan 1
+ vpc 1
+ no sh
 ```
 
 ### Nexus_J
