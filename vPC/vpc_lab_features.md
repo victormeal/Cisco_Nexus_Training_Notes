@@ -607,6 +607,18 @@ ip 1.1.1.45
 priority 90
 preempt
  ```
+ ## VRRP
+ ```
+  config t
+    feature vrrp
+    int vlan 2
+      vrrp 2
+        address 2.2.2.12
+        priority 100
+        preempt
+        no sh
+ ```
+ 
  
 ## Troubleshooting 
  Is possible that we have trouble making the ospf neighbors or making the pings.
