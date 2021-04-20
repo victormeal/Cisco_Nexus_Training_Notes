@@ -1,0 +1,60 @@
+"Aqui pueden jugar y ver como son fisicamente los diferentes nexus y sus partes"
+https://apps.kaonadn.net/4357027/index.html#C276
+
+"solo buscan el nexus que quieren usar y ya hay algunas topologias hechas"
+https://autopods.cisco.com/all_pods
+
+vpc
+https://www.cisco.com/c/dam/en/us/td/docs/switches/datacenter/sw/design/vpc_design/vpc_best_practices_design_guide.pdf
+
+ISSU matrix, tambien ahi pueden revisar el upgrade path
+https://www.cisco.com/c/dam/en/us/td/docs/Website/datacenter/ISSUmatrix/index.html
+
+Donde baja las imagenes
+https://software.cisco.com/download/home
+
+release notes de los nexus 9k, recuerden que hay tambien para 7k, 6k, 3k
+https://www.cisco.com/c/en/us/support/switches/nexus-9000-series-switches/products-release-notes-list.html
+
+calo
+https://calo-new.cisco.com/#/tools/lab_cases/client_update/Mar21jgandariRCDNTestbed1984
+
+ftp server:
+IP Address : 10.76.76.160
+username: tftpuser
+password: C!sco123
+
+
+rtp seerver
+172.18.121.75
+admin
+cisco!123
+dcrs-ftp.cisco.com
+
+Las notas de los caso que hablamos en cada case review estan aqui
+https://cisco.sharepoint.com/sites/dcrs-mx/SitePages/Case-Review-Minutes.aspx?Mode=Edit
+
+Nexus 9k training
+https://cxtraining.cisco.com/CustAdv/ts/ielc/tst/el/online/courses/nexus_9k_portal/
+
+he visto que en los casos luego ponen la topologia pero en fromato de texto. Que herramienta usan para hacerlas?
+https://asciiflow.com/#/
+
+
+Dmirror
+https://techzone.cisco.com/t5/Nexus-9300/N9K-Dmirror-SPAN-transit-traffic-without-external-sniffer/ta-p/941700
+
+ELAM
+https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/213848-nexus-9000-cloud-scale-asic-tahoe-nx-o.html
+
+
+https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/210592-Nexus-9000-Packet-Tracer-tool-explained.html
+
+
+
+
+
+
+
+
+
