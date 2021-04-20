@@ -596,6 +596,18 @@ config t
   
  show ip ospf nei
  ```
+ ## HSRP
+ ```
+ config t
+feature hsrp
+int vlan 1
+hsrp version 2
+hsrp 1 ipv4
+ip 1.1.1.45
+priority 90
+preempt
+ ```
+ 
 ## Troubleshooting 
  Is possible that we have trouble making the ospf neighbors or making the pings.
  - For ping problems add **peer-gateway**:
