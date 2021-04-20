@@ -596,6 +596,24 @@ config t
   
  show ip ospf nei
  ```
+ ## OSPF
+ ```
+ ```
+config t
+    feature ospf
+    router ospf 1
+      router-id 10.10.10.30
+    exit
+    int vlan 10
+      ip router ospf 1 area 1
+      ip ospf passive-interface
+      exit
+      
+  
+ show ip ospf nei
+ ```
+ ```
+ 
  ## EIGRP
  ```
  config t
@@ -609,6 +627,7 @@ exit
 int vlan 1
 no ip router eigrp 1
 ip router eigrp myeigrp
+ip passive-interface eigrp myeigrp
 exit
 int vlan 3
 no ip router eigrp 1
