@@ -596,6 +596,24 @@ config t
   
  show ip ospf nei
  ```
+ ## EIGRP
+ ```
+ config t
+feature eigrp
+router eigrp myeigrp
+router-id 0.0.0.5
+autonomous-system 1
+log-adjacency-changes
+log-neighbor-warnings
+exit
+int vlan 1
+no ip router eigrp 1
+ip router eigrp myeigrp
+exit
+int vlan 3
+no ip router eigrp 1
+ip router eigrp myeigrp
+ ```
  ## HSRP
  ```
  config t
