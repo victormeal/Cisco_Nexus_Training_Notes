@@ -28,6 +28,12 @@ Mod  Online Diag Status
 * this terminal session 
 ```
 2. Verify port's ASIC, Slice and SrcId (you need to know in which interface to expect the packet)
+- to know in which interface to expect the packet you can use `sh port-channel load-balance forwarding-path int po 3 src-ip 1.1.1.6 dst-ip 2.2.2.3 `
+```
+nexus_01# sh port-channel load-balance forwarding-path int po 3 src-ip 1.1.1.6 dst-ip 2.2.2.3 
+PC member: Ethernet1/2 
+(Result valid only for known unicast)
+```
 ```
 nexus_01# sh hardware internal tah interface e1/2
 #########################################
