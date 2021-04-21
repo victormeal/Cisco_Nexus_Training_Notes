@@ -138,3 +138,13 @@ module-1(TAH-elam-insel6)# end
 module-1# exit
 nexus_01# 
 ```
+10. check icoming and outgoing interfaces with the indexes
+```
+nexus_01# sh hardware internal tah niv_idx 0x603
+niv_idx  : 1539
+Interface: Ethernet1/2
+nexus_01# sh hardware internal tah niv_idx 0x602
+niv_idx  : 1538
+Interface: Ethernet1/1
+nexus_01# 
+```
