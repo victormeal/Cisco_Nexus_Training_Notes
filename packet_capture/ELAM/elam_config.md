@@ -4,6 +4,7 @@ https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/2
 One packet, first match on interface
 
 ## config
+1. Check that Nexus is compatible to run ELAM. Check in https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/213848-nexus-9000-cloud-scale-asic-tahoe-nx-o.html
 
 ```
 nexus_01# show module
@@ -25,6 +26,9 @@ Mod  Online Diag Status
 1    Pass
 
 * this terminal session 
+```
+2. Verify port's ASIC, Slice and SrcId (you need to know in which interface to expect the packet)
+```
 nexus_01# sh hardware internal tah interface e1/2
 #########################################
 IfIndex: 0x1a000200
@@ -49,8 +53,21 @@ ENTRY: 40
         src_chip : 1
         fabric_port : 1
         outer_vlan_xlate_idx : 255
+```
+3. Attach to the module (int ex/y -> x is the module)
+```
 nexus_01# attach mod 1
+```
+4. Enter ELAM configuration mode and specify the proper ASIC from Step 2
+```
 module-1# debug platform internal tah elam asic 0
+```
+5. Configure the trigger - (There are many options you can specify here)
+- asic #
+- slice #
+- in-select # -> 6 for outer headers, 7 for inner headers (GRE,VXLAN)
+- use-src-id # (SrcId) see on step 2
+```
 module-1(TAH-elam)# trigger init asic 0 slice 1 lu-a2d 1 in-select ?
   10  {outer l4, inner l4, ieth}
   19  {udf_vec}
@@ -62,9 +79,21 @@ module-1(TAH-elam)# trigger init asic 0 slice 1 lu-a2d 1 in-select ?
 module-1(TAH-elam)# trigger init asic 0 slice 1 lu-a2d 1 in-select 6 out-select 0 use-src-id 80
 Slot 1: param values: start asic 0, start slice 1, lu-a2d 1, in-select 6, out-se
 lect 0, src_id 80
+```
+6. reset if there was previous config
+```
 module-1(TAH-elam-insel6)# reset
+```
+7. Set the ELAM triggers using SRC & DEST IP from this example
+```
 module-1(TAH-elam-insel6)# set outer ipv4 dst_ip 2.2.2.3 src_ip 1.1.1.6
+```
+8. start capture
+```
 module-1(TAH-elam-insel6)# start
+```
+9. see report
+```
 module-1(TAH-elam-insel6)# report
 HEAVENLY ELAM REPORT SUMMARY
 slot - 1, asic - 0, slice - 1
