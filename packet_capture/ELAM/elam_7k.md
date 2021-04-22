@@ -42,7 +42,8 @@ trigger rbus rbi pb1 ip if cap2 1
 ```
 start
 ```
-```status``` -> solo te dice si se triggero, no te muestra el paquete
+```status``` 
+-> solo te dice si se triggero, no te muestra el paquete
 ```show dbus | i seq```
 ```sh rbus | i seq```
 el seq # debe de hacer match
