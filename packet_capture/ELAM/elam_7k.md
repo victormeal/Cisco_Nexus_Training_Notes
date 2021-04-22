@@ -14,6 +14,7 @@
 ## esto es para las linecards M
 
 - e1/16
+
 `show module`
 `attach module 1` -> para ver que tipo de linecard (M,F)
 `show hardware internal dev-port-map`
