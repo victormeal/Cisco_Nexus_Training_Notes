@@ -53,3 +53,23 @@ ver los indexes (source_index, dest_index), decodificar en el vdc que le corespo
 
 ## es distinto para las Fs
 
+
+## Nexus 5k
+nexus 56... -> nexus 6k
+solo estos pueden hacer elam en los 5k
+parecido al wrapper
+
+```
+ela slot all
+trigger lu ingress ipv4 source-ipv4 address_ipv4 x.x.x.x destination-ipv4-address_ipv4 y.y.y.y
+start capture
+sh cap lu
+```
+
+revisar interfaz donde llegar
+mac address (CE_DA, CE_SA)
+ip (L3_SA, L3_DA)
+ttl (L3_TTL)
+tamanio del paquete (L3_Length)
+
+
