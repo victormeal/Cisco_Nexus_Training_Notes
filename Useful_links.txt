@@ -50,6 +50,9 @@ https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/2
 
 https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/210592-Nexus-9000-Packet-Tracer-tool-explained.html
 
+VDC Nexus 7k
+https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_device_context/configuration/guide/b-7k-Cisco-Nexus-7000-Series-NX-OS-Virtual-Device-Context-Configuration-Guide/overview.html
+
 
 
 
