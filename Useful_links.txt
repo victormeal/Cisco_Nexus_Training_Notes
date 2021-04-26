@@ -53,8 +53,8 @@ https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/2
 VDC Nexus 7k
 https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_device_context/configuration/guide/b-7k-Cisco-Nexus-7000-Series-NX-OS-Virtual-Device-Context-Configuration-Guide/overview.html
 
-
-
+troubleshooting for beginners nexus
+https://techzone.cisco.com/t5/Troubleshooting-and-Tools/Nexus-NX-OS-Troubleshooting-Cheat-Sheet-for-Beginners/ta-p/1413193
 
 
 
