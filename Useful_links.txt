@@ -47,7 +47,7 @@ https://techzone.cisco.com/t5/Nexus-9300/N9K-Dmirror-SPAN-transit-traffic-withou
 ELAM
 https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/213848-nexus-9000-cloud-scale-asic-tahoe-nx-o.html
 
-
+Packet Tracer nexus
 https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/210592-Nexus-9000-Packet-Tracer-tool-explained.html
 
 VDC Nexus 7k
