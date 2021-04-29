@@ -1,5 +1,5 @@
 # Steps to apply QoS to traffic with COS==5
-
+```
 switch(config)# class-map type qos match-cos5                    <----Create Class map
 switch(config-cmap-qos)# match cos 5                             <----Match all traffic with COS 5
 switch(config-cmap-qos)# exit
@@ -89,3 +89,4 @@ no shutdown
 interface Ethernet1/2
 service-policy type queuing output TAC-58q-out
 no shutdown
+```
