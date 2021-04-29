@@ -24,7 +24,7 @@ sh logg log | i i tcam
 show hardware access-list resource region
 show hardware access-list resource region | i i ing
 
-show hardware resource utilization
+show hardware access-list resource utilization
 
 hardware access-list tcam region ing-racl 1536
 
