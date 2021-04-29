@@ -56,7 +56,8 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 troubleshooting for beginners nexus
 https://techzone.cisco.com/t5/Troubleshooting-and-Tools/Nexus-NX-OS-Troubleshooting-Cheat-Sheet-for-Beginners/ta-p/1413193
 
-
+nexus 9k landing page -  troubleshooting
+https://techzone.cisco.com/t5/Nexus-9500/Nexus-9k-Landing-Page/ta-p/747089
 
 
 
