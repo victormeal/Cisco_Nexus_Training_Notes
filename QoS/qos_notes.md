@@ -24,3 +24,7 @@ sh int e1/1 counters erros
 sh queuing int e1/1
 ! lo visto antes se puede comprobar aqui
 ```
+
+```
+clear counters interface?
+```
