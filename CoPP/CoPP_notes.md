@@ -14,3 +14,7 @@ sh hardware rate-limiter
 sh int e1/1 counters detailed
 ```
 
+```
+clear copp statistics
+```
+
