@@ -1,6 +1,6 @@
 # vPC Notes
 
-por default el keep-alive usa la vrf default
+por default el keep-alive usa la vrf de management
 
 ## Components of vPC
 
