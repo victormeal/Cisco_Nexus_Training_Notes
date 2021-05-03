@@ -1,6 +1,7 @@
 # QoS
 
 https://techzone.cisco.com/t5/Nexus-9500/Nexus-9k-Landing-Page/ta-p/747089
+https://techzone.cisco.com/t5/Nexus-9500/Nexus-9500-Output-Discard-Troubleshooting/ta-p/1028384
 
 - todo cae en el grupo 0
 - dependiendo del nexus tienes diferente cant de grupos
