@@ -1,5 +1,7 @@
 # vPC Notes
 
+por default el keep-alive usa la vrf default
+
 ## Components of vPC
 
 ![image](./images/vpc_components.png)
