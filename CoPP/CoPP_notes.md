@@ -17,4 +17,9 @@ sh int e1/1 counters detailed
 ```
 clear copp statistics
 ```
+```
+copp profile strict
+copp copy profile strict prefix MyCoPP
+```
+
 
