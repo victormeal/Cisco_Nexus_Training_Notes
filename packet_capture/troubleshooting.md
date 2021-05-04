@@ -42,3 +42,8 @@ eth lo in inb mirror display-filter icmp limit-c-f 0
 
 no veremos el trafico creado de ese nexus, no es siempre
 
+
+
+```
+clear ip access-list counters myACL
+```
