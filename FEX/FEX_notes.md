@@ -7,7 +7,9 @@
 - dump switches: no pueden hacer forwarding del trafico, tienen que mandarlo al N9k
 - no puedes conectarte (consola/terminal) a un FEX
 - no conectar L2 (switches) a los puertos del FEX, purso Host L3 (servidores best practice)
+- si conectas otro switch la interfaz se ira a BPDUerrDisable
 - no distinguen trafico de control y normal
+- solo se puede hacer SPAN (ingress) y ACLs para capturas
 
 ## config
 ```
