@@ -7,6 +7,7 @@
 - inside the domain `peer-switch`
 - usa la system-mac para el root, y ambos switches mandan bpdus
 - solo usar esto si los vpc son los roots
+- esta prohibido configurar el spanning-tree priority manualmente
 
 ## Bridge assurance
 - port type edge == port fast
