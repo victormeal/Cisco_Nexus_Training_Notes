@@ -1,5 +1,7 @@
 # Basic NX OS Upgrade
 
+https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/recommended_release/b_Minimum_and_Recommended_Cisco_NX-OS_Releases_for_Cisco_Nexus_9000_Series_Switches.html
+
 ## Get image
 https://software.cisco.com/download/home
 
