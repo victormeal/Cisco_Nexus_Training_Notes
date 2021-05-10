@@ -38,7 +38,7 @@ destination int sup-eth 0
 no sh
 exit
 
-eth lo in inb mirror display-filter icmp limit-c-f 0
+ethanalyzer local interface inband mirror display-filter icmp limit-captured-frames 0
 ```
 
 no veremos el trafico creado de ese nexus, no es siempre
