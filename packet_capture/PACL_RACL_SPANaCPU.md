@@ -40,7 +40,7 @@ exit
 
 ethanalyzer local interface inband mirror display-filter icmp limit-captured-frames 0
 ```
-
+no olvidar apagar o quietar el monitor session creado
 no veremos el trafico creado de ese nexus, no es siempre
 
 ----
