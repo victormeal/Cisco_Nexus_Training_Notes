@@ -25,6 +25,8 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/6-x/inter
 feature tunnel
 interface tunnel X
 tunnel mode gre ip
-tunnel source ex/x
+tunnel source ex/x ---> puede ser una loopback o SVI
 tunnel destination x.x.x.x
+ip add x.x.x.x/x
+no shut
 ```
