@@ -5,6 +5,8 @@
 - both switches send BPDUs
 - Nexus needs to be the root
 - inside the domain `peer-switch`
+- usa la system-mac para el root, y ambos switches mandan bpdus
+- solo usar esto si los vpc son los roots
 
 ## Bridge assurance
 - port type edge == port fast
