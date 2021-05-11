@@ -147,3 +147,24 @@ IP Route Table for VRF "default"
 
 switchB# 
 ```
+## Tracert from other device
+```
+switchA# sh ip int bri
+
+IP Interface Status for VRF "default"(1)
+Interface            IP Address      Interface Status
+Lo0                  192.168.1.1     protocol-up/link-up/admin-up       
+Lo1                  192.168.11.11   protocol-up/link-up/admin-up       
+Eth1/44              172.16.12.1     protocol-up/link-up/admin-up       
+switchA# tracer 192.168.5.1 source-interface lo0
+traceroute to 192.168.5.1 (192.168.5.1) from 192.168.1.1 (192.168.1.1), 30 hops max, 40 byte packets
+ 1  172.16.12.2 (172.16.12.2)  1.092 ms  0.649 ms  0.461 ms
+ 2  172.16.24.4 (172.16.24.4)  0.771 ms  0.617 ms  0.469 ms
+ 3  192.168.5.1 (192.168.5.1)  1.084 ms  0.907 ms  0.568 ms
+switchA# tracer 192.168.5.1 source-interface lo1
+traceroute to 192.168.5.1 (192.168.5.1) from 192.168.11.11 (192.168.11.11), 30 hops max, 40 byte packets
+ 1  172.16.12.2 (172.16.12.2)  1.23 ms  0.928 ms  0.707 ms
+ 2  172.16.23.3 (172.16.23.3)  0.723 ms  0.637 ms  0.523 ms
+ 3  192.168.5.1 (192.168.5.1)  0.948 ms  0.772 ms  0.572 ms
+switchA# 
+```
