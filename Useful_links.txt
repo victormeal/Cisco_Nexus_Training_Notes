@@ -59,6 +59,13 @@ https://techzone.cisco.com/t5/Troubleshooting-and-Tools/Nexus-NX-OS-Troubleshoot
 nexus 9k landing page -  troubleshooting
 https://techzone.cisco.com/t5/Nexus-9500/Nexus-9k-Landing-Page/ta-p/747089
 
+quality champion
+https://cxtraining.cisco.com/cr/?id=265
+https://cisco.sharepoint.com/sites/CustomerExperienceQualitySecurityChampionsGlobal
+https://cisco.sharepoint.com/sites/BAC/SitePages/Audit-Preparedness.aspx
+
+
+
 
 
 
