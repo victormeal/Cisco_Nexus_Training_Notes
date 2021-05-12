@@ -28,6 +28,7 @@ sh system internal port-client | i 1/1
 
 
 debounce timer -> 100ms
+The port debounce time is the amount of time that an interface waits to notify the supervisor of a link going down.
 
 ----
 - ethpm
