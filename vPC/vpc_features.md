@@ -47,3 +47,5 @@ ip x.x.x.x
 ## L3 peer-router
 
 `layer3 peer-router`
+
+resuelve problemas de adjaciencia de protocolos de routeo, donde los mensajes tienen TTL de 1.
