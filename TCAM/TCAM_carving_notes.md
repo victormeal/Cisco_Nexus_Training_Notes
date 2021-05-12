@@ -26,11 +26,9 @@ show hardware access-list resource region | i i ing
 
 show hardware access-list resource utilization
 
-hardware access-list tcam region ing-racl 1536
+hardware access-list tcam region ing-racl 1536 
 
-hardware access-list tcam region ing-ifacl 256
-
-
-
+hardware access-list tcam region ing-ifacl 256   ---> port access list
 
 ```
+se necesita hacer reload para aplicar los cambios
