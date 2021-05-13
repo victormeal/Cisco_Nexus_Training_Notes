@@ -1,7 +1,7 @@
 # vPC Features
 
 ## peer switch
-- avoid STP problems
+- avoid STP problems ---> evitar que STP reconverga si el primary switch esta down
 - both switches send BPDUs
 - Nexus needs to be the root
 - inside the domain `peer-switch`
