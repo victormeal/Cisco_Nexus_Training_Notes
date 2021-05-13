@@ -32,7 +32,7 @@ Manda el trafico por TODA la topologia, y eventualmente determina el mejor camin
 ### PIM-SM (Sparse Mode) - Shared Distribution Tree
 Evita mandar el trafico a toda la topologia para converger.
 - RP (Rendezvous Point)
-- Host ----> IGMP Report msg ----> Last-Hop Router ----> (*,G) Join msg ----> RP
+- Host ----> IGMP Report msg ----> Last-Hop Router ----> (*,G) Join msg ----> RP <---- (S,G) <---- FHR <---- Server
   - (source,group) * = doesn't matter de source
 - Lo anterior puede ser un ruteo suboptimo por lo que cuando el Last-hop router recibe el paquete se da cuenta de que hay un mejor camino y manda un (S,G) Join msg directo al source router. Sin embargo, ahora recibiria doble paquete, por lo que el last-hop router manda un Prune msg para no recibir el paquete por el camino sub optimo. Esto se llama Shortest Path Tree Switchover
 ### PIM Sparse-Dense Mode
