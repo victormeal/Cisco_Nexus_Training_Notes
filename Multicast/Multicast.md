@@ -61,5 +61,7 @@ ip igmp snooping
 ```
 show ip mroute
 sh ip pim rp
+
+sh ip igmp snopping
 ```
 
