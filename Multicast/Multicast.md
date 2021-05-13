@@ -31,6 +31,8 @@ Evita mandar el trafico a toda la topologia para converger.
 
 ----
 
+## IOS Conifg
+
 ```
 ip multicast-routing
 int e0/0
