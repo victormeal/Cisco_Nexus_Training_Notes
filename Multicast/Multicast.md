@@ -56,6 +56,9 @@ ip pim send-rp-discovery scope ?
 
 ```
 ```
+ip igmp snooping
+```
+```
 show ip mroute
 sh ip pim rp
 ```
