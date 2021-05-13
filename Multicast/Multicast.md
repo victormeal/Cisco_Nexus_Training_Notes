@@ -11,6 +11,7 @@
 - el (S,G) se aprende cuando llega el trafico de multicast
 - si no tienes un (*,G) significa que no tienens a nadie subscrito.
 - Si unicast esta roto, multicast esta roto. Pero puede estar bien unicast pero mal multicast.
+- limitaciones en RACL, (por ejemplo no bloquea trafico, peor PACL si)
 ----
 ## Multicast Theroy
 - Multicast group -> Class D Address Range (224.0. 0.0 – 239.255. 255.255)
