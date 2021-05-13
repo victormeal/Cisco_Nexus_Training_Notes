@@ -34,6 +34,8 @@ Evita mandar el trafico a toda la topologia para converger.
 - RP (Rendezvous Point)
 - Host ----> IGMP Report msg ----> Last-Hop Router ----> (*,G) Join msg ----> RP <---- (S,G) <---- FHR <---- Server
   - (source,group) * = doesn't matter de source
+  - the FHR->RP->LHR path is named shared path tree
+  - the FHR->LHR path is named shortest path tree
 - Lo anterior puede ser un ruteo suboptimo por lo que cuando el Last-hop router recibe el paquete se da cuenta de que hay un mejor camino y manda un (S,G) Join msg directo al source router. Sin embargo, ahora recibiria doble paquete, por lo que el last-hop router manda un Prune msg para no recibir el paquete por el camino sub optimo. Esto se llama Shortest Path Tree Switchover
 ### PIM Sparse-Dense Mode
 - si puede usa sparse, si no usa dense.
