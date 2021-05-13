@@ -31,8 +31,8 @@ Evita mandar el trafico a toda la topologia para converger.
 
 
 
-´´´
+```
 ip multicast-routing
 int e0/0
 ip pim dense-mode
-´´´
+
