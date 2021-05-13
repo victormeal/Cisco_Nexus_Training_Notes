@@ -2,6 +2,7 @@
 
 ## Nexus notes
 - En nexus solo soporta sparse mode
+- para troubleshootear multicast es importante armar la topologia
 - Terminology
   - Sender, Receiver
   - First-hop Router (FHR), Last-hop Router (LHR)
