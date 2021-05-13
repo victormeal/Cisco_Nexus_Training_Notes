@@ -1,3 +1,14 @@
 # Multicast
 - Multicast group -> Class D Address Range (224.0. 0.0 – 239.255. 255.255)
-- 
+- Multicast MAC address -> usa los ultimos 3 octetos, el bit mas a la izquierda se hace cero y se pasa a HEX. Esto conforma la segunda mitad. La primera mitad siempre es 01-00-005e
+- debido a que el bit mas a la izuierda siempre se hace 0, puede haber MAC address iguales para dos grupos distintos.
+
+## IGMP (Internet Group Management Protocol)
+Manera en el que los host le dicen a su router que quiere pertenecer a un grupo.
+- IGMPv1 --> el router le pregunta cada 60s al host, si quiere pretenecer todavia a ese grupo.
+- IGMPv2 --> lo mismo pero ahora el host puede decir en cualquier momento que quiere abandonar el grupo.
+- IGMPv3 --> lo mismo pero el host puede decir que quiere trafico de un source en particular.
+- IGMP Snooping --> manera en que un switch sabe que un host pidio unirse a un grupo y cunado reciba la MAC para ese grupo mandarsela.
+
+## RPF (Reverse Path Forwarding)
+Si el source manda multicast traffic y tiene varios caminos, este va tomar todos pero al juntarse de nuevo podria ocasionar que el destination le llegaran paquetes duplicados. Para evitar esto RPF, solo acpta trafico multicast de la interfaz que usaria para mandar trafico unicast al source.
