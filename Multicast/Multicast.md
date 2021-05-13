@@ -29,16 +29,21 @@ Evita mandar el trafico a toda la topologia para converger.
   - (source,group) * = doesn't matter de source
 - Lo anterior puede ser un ruteo suboptimo por lo que cuando el Last-hop router recibe el paquete se da cuenta de que hay un mejor camino y manda un (S,G) Join msg directo al source router. Sin embargo, ahora recibiria doble paquete, por lo que el last-hop router manda un Prune msg para no recibir el paquete por el camino sub optimo. Esto se llama Shortest Path Tree Switchover
 
-
+----
 
 ```
 ip multicast-routing
 int e0/0
-ip pim dense-mode
+ip pim dense-mode ---> ip pim sparse-mode  
 
 show ip mroute
+```
+```
+ip pim rp-address x.x.x.x ---> RP
 ```
 ```
 int e0/0
 ip igmp join-group x.x.x.x
 ```
+
+
