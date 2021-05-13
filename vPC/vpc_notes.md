@@ -27,9 +27,6 @@ por default el keep-alive usa la vrf de management
 - Cisco Fabric Services protocol (CFS):  Underlying protocol running on top of vPC peer-link providing reliable synchronization and consistency check mechanisms between the 2 peer devices.
 
 
-VPC synchronize the MAC table ( MAC - Port association )
-
-otherwise, the MAC would be associated with the peer-link instead of VPC (local)
 
 ## VPC loop prevention rule
 Need this 3 things to happen in order to drop the packet:
@@ -37,4 +34,12 @@ Need this 3 things to happen in order to drop the packet:
 2. destined to a VPC L2 egress interface
 3. peer VPC memeber por is UP
  
+ ----
+ 
+VPC synchronize the MAC table ( MAC - Port association )
+
+otherwise, the MAC would be associated with the peer-link instead of VPC (local)
+
+Peer-link in STP has a cost of 0 ??????
+
 
