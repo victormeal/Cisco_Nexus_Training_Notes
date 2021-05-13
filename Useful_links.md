@@ -39,7 +39,7 @@ https://cisco.sharepoint.com/sites/dcrs-mx/SitePages/Case-Review-Minutes.aspx?Mo
 https://cxtraining.cisco.com/CustAdv/ts/ielc/tst/el/online/courses/nexus_9k_portal/
 
 - he visto que en los casos luego ponen la topologia pero en fromato de texto. Que herramienta usan para hacerlas?
-https://asciiflow.com/#/
+https://asciiflow.com/legacy/
 
 
 - Dmirror
