@@ -36,3 +36,9 @@ ip multicast-routing
 int e0/0
 ip pim dense-mode
 
+show ip mroute
+```
+```
+int e0/0
+ip igmp join-group x.x.x.x
+```
