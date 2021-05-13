@@ -42,4 +42,5 @@ otherwise, the MAC would be associated with the peer-link instead of VPC (local)
 
 Peer-link in STP has a cost of 0 ??????
 
+Peer-link is part of STP. BPDU handling is modified such that Peer-link will not be blocked.
 
