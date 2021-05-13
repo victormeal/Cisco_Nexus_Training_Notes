@@ -5,6 +5,11 @@
   - Sender, Receiver
   - First-hop Router (FHR), Last-hop Router (LHR)
   - RP
+- todos los routers en el camino tienen que tener el (S,G)
+- si no tienes el (S,G) es que no te esta llegando el trafico de multicast
+- el (S,G) se aprende cuando llega el trafico de multicast
+- si no tienes un (*,G) significa que no tienens a nadie subscrito.
+- 
 ----
 - Multicast group -> Class D Address Range (224.0. 0.0 – 239.255. 255.255)
 - Multicast MAC address -> usa los ultimos 3 octetos, el bit mas a la izquierda se hace cero y se pasa a HEX. Esto conforma la segunda mitad. La primera mitad siempre es 01-00-005e
