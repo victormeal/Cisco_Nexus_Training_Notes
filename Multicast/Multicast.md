@@ -8,7 +8,7 @@ Manera en el que los host le dicen a su router que quiere pertenecer a un grupo.
 - IGMPv1 --> el router le pregunta cada 60s al host, si quiere pretenecer todavia a ese grupo.
 - IGMPv2 --> lo mismo pero ahora el host puede decir en cualquier momento que quiere abandonar el grupo.
 - IGMPv3 --> lo mismo pero el host puede decir que quiere trafico de un source en particular.
-- IGMP Snooping --> manera en que un switch sabe que un host pidio unirse a un grupo y cunado reciba la MAC para ese grupo mandarsela.
+- IGMP Snooping --> manera en que un switch sabe que un host pidio unirse a un grupo y cunado reciba la MAC para ese grupo mandarsela. Si no esta activado un switch manda los frames de multicast como si fuera broadcast.
 
 ## RPF (Reverse Path Forwarding)
 Si el source manda multicast traffic y tiene varios caminos, este va tomar todos pero al juntarse de nuevo podria ocasionar que el destination le llegaran paquetes duplicados. Para evitar esto RPF, solo acpta trafico multicast de la interfaz que usaria para mandar trafico unicast al source.
