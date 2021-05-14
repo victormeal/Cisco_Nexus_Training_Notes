@@ -53,19 +53,22 @@ Evita mandar el trafico a toda la topologia para converger.
 ----
 
 ## IOS Conifg
-
+- Comandos para habilitar una interfaz para ser multicast
 ```
 ip multicast-routing
 int e0/0
 ip pim dense-mode ---> ip pim sparse-mode ---> ip pim sparse-dense-mode
 ```
+- Decirle en donde esta el RP, manera manual
 ```
 ip pim rp-address x.x.x.x ---> RP
 ```
+- Comandos para habilitar una interfaz para unirse a un grupo de multicast, como si fuera un host
 ```
 int e0/0
 ip igmp join-group x.x.x.x
 ```
+- Comandos para habilitar que busque el RP, manera dinamica.
 ```
 !no ip pim rp-address x.x.x.x
 ! Mapping agent
@@ -73,6 +76,7 @@ ip pim send-rp-announce loopback 0 scope ?   ---> TTL?
 ip pim send-rp-discovery scope ?
 
 ```
+- Comandos para habilitar una igmp snooping
 ```
 ip igmp snooping
 ```
