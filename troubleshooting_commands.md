@@ -1,20 +1,31 @@
 # Troubleshooting Commands
 ## Basic Cammands
-- `sh version`
-- `sh module`
-- `sh run`
-- `sh ip int bri`
-- `sh int status`
-- `sh ip route vrf all`
-- `sh logg log`
-- `sh logg nvram`
-- `sh tech`
+- `show version`
+- `show module`
+- `show run`
+- `show logg log`
+- `show logg nvram`
+- `show tech`
+
+## L2 Connectivity
+- `show int status`
+- `show cdp neighbors`
+- `show cdp neighbors interface port-channel x`
+
+## L2/3
+- `show ip arp detail`
+- `show ip arp detail | include x.x.x.x
+
+## L3 Connectivity
+- `show ip int bri`
+- `show ip route vrf all`
+- `show ip route x.x.x.x`
 
 ## VPC
-- `sh vpc`
+- `show vpc`
 
 ## Multicast
-- `sh run pim`
-- `sh ip pim neighbors`
-- `sh ip mroute vrf all`
+- `show run pim`
+- `show ip pim neighbors`
+- `show ip mroute vrf all`
 
