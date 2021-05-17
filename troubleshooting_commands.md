@@ -14,7 +14,7 @@
 
 ## L2/3
 - `show ip arp detail`
-- `show ip arp detail | include x.x.x.x
+- `show ip arp detail | include x.x.x.x`
 
 ## L3 Connectivity
 - `show ip int bri`
