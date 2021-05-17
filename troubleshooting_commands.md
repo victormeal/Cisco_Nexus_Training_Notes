@@ -10,7 +10,7 @@
 ## L2 Connectivity
 - `show int status`
 - `show cdp neighbors`
-- `show cdp neighbors interface port-channel x`
+- `show cdp neighbors interface port-channel X`
 
 ## L2/3
 - `show ip arp detail`
@@ -28,4 +28,6 @@
 - `show run pim`
 - `show ip pim neighbors`
 - `show ip mroute vrf all`
+- `show ip mroute x.x.x.x`
+- `show ip igmp snooping groups vlan X`
 
