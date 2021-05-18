@@ -88,6 +88,9 @@ https://techzone.cisco.com/t5/BDB-App-Store-Scripts/Data-Center-Routing-amp-Swit
 - link externo para bugs
 https://bst.cloudapps.cisco.com/bugsearch/
 
+- link interno para bugs
+https://cdetsng.cisco.com/summary/#/defect/CSCvj87211
+
 
 
 
