@@ -91,6 +91,9 @@ https://bst.cloudapps.cisco.com/bugsearch/
 - link interno para bugs
 https://cdetsng.cisco.com/summary/#/defect/CSCvj87211
 
+- version fidelity 
+https://wwwin-version-fidelity.cisco.com/version_fidelity/vf/ui
+
 
 
 
