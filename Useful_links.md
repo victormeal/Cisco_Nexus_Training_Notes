@@ -85,6 +85,8 @@ https://techzone.cisco.com/t5/Nexus-6000-2000/Nexus-platform-consolidated-Landin
 - ????
 https://techzone.cisco.com/t5/BDB-App-Store-Scripts/Data-Center-Routing-amp-Switching-DCRS-TAC-Tools/ta-p/805073
 
+- link externo para bugs
+https://bst.cloudapps.cisco.com/bugsearch/
 
 
 
