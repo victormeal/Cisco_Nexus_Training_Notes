@@ -31,3 +31,6 @@
 - `show ip mroute x.x.x.x`
 - `show ip igmp snooping groups vlan X`
 
+## Miscellaneous
+- `sh hardware capacity forwarding | b TCAM`
+
