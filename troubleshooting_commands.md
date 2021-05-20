@@ -56,7 +56,7 @@
 - `show ip pim neighbors`
 - `show ip mroute vrf all`
 - `show ip mroute x.x.x.x`
-- `show ip igmp snooping groups vlan X`
+- `sh ip igmp snooping vlan 2`
 ----
 ## Miscellaneous
 - `sh hardware capacity forwarding | b TCAM`
