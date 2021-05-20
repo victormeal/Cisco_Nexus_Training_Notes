@@ -13,6 +13,7 @@
 - si no tienes un (*,G) significa que no tienens a nadie subscrito.
 - Si unicast esta roto, multicast esta roto. Pero puede estar bien unicast pero mal multicast.
 - limitaciones en RACL, (por ejemplo no bloquea trafico, pero PACL si)
+- en VPC solo un nexus hace forwarding hacia el receiber. En ambos veremos el S,G pero uno no tenra interfaz en el OIL y el otro si.
 ----
 ## Multicast Theroy
 - Multicast group -> Class D Address Range (224.0. 0.0 – 239.255. 255.255)
@@ -83,6 +84,7 @@ ip igmp snooping
 ```
 show ip mroute
 sh ip pim rp
+sh ip pim internal vpc rpf-source 
 
 sh ip igmp snopping
 ```
