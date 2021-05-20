@@ -57,6 +57,7 @@
 - `show ip mroute vrf all`
 - `show ip mroute x.x.x.x`
 - `sh ip igmp snooping vlan 2`
+- `sh ip pim internal vpc rpf-source `
 - `show ip pim interface vlan 2 | i i DR`
 ----
 ## Miscellaneous
