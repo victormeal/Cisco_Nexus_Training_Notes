@@ -12,6 +12,9 @@
 - `show cdp neighbors`
 - `show cdp neighbors interface port-channel X`
 
+## VLANs
+- `show vlan bri`
+
 ## L2/3
 - `show ip arp detail`
 - `show ip arp detail | include x.x.x.x`
