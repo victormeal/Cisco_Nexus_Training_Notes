@@ -21,6 +21,10 @@
 ### Port-channels
 - `sh port-channel summary`
 
+### Spanning-tree (STP)
+- `sh spanning-tree brief`
+- `sh spanning-tree summary `
+
 ### VPC
 - `show vpc`
 - `sh port-channel summary`
