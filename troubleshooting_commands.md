@@ -53,7 +53,7 @@
 
 ### Multicast
 - `show run pim`
-- `show ip pim neighbors`
+- `show ip pim neighbor`
 - `show ip mroute vrf all`
 - `show ip mroute x.x.x.x`
 - `sh ip igmp snooping vlan 2`
