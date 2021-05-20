@@ -29,6 +29,7 @@
 - `show ip arp detail`
 - `show ip arp detail | include x.x.x.x`
 ----
+## Layer 3
 ### L3 Connectivity
 - `show ip int bri`
 - `show ip route vrf all`
