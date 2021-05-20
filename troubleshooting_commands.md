@@ -7,47 +7,56 @@
 - `show logg nvram`
 - `show tech`
 
-## L2 Connectivity
+----
+## Layer 2
+
+### L2 Connectivity
 - `show int status`
 - `show cdp neighbors`
 - `show cdp neighbors interface port-channel X`
 
-## VLANs
+### VLANs
 - `show vlan bri`
 
+### Port-channels
+- `sh port-channel summary`
+
+### VPC
+- `show vpc`
+- `sh port-channel summary`
+----
 ## L2/3
 - `show ip arp detail`
 - `show ip arp detail | include x.x.x.x`
-
-## L3 Connectivity
+----
+### L3 Connectivity
 - `show ip int bri`
 - `show ip route vrf all`
 - `show ip route x.x.x.x`
 
-## VPC
-- `show vpc`
 
-## OSPF
+
+### OSPF
 - `show ospf`
 - `show ospfv3`
 - `show ip protocols`
 
-## EIGRP
+### EIGRP
 - `show ip eigrp topology x.x.x.x`
 - `show ip protocols`
 
-## BGP
+### BGP
 - `Show ip bgp summary`
 - `show ip bgp neighbors`
 - 
 
-## Multicast
+### Multicast
 - `show run pim`
 - `show ip pim neighbors`
 - `show ip mroute vrf all`
 - `show ip mroute x.x.x.x`
 - `show ip igmp snooping groups vlan X`
-
+----
 ## Miscellaneous
 - `sh hardware capacity forwarding | b TCAM`
 
