@@ -24,6 +24,20 @@
 ## VPC
 - `show vpc`
 
+## OSPF
+- `show ospf`
+- `show ospfv3`
+- `show ip protocols`
+
+## EIGRP
+- `show ip eigrp topology x.x.x.x`
+- `show ip protocols`
+
+## BGP
+- `Show ip bgp summary`
+- `show ip bgp neighbors`
+- 
+
 ## Multicast
 - `show run pim`
 - `show ip pim neighbors`
