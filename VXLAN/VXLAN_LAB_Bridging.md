@@ -1,4 +1,5 @@
-# Spine
+# VXLAN Bridging Config
+## Spine
 ```
 SPINE_01(config)# sh run
 
@@ -33,7 +34,7 @@ router ospf 1
 SPINE_01(config)# 
 ```
 ----
-# LeafA
+## LeafA
 ```
 Leaf_A# sh run
 
@@ -81,7 +82,7 @@ Leaf_A#
 ```
 
 ----
-# LeafB
+## LeafB
 ```
 Leaf_B# sh run
 
@@ -128,7 +129,23 @@ router ospf 1
 Leaf_B# 
 ```
 ----
-# Packet Capture (Ping HostA (1.1.1.10) ---> HostB (1.1.1.20))
+## MAC Address table
+- Leaf A
+```
+Leaf_A# sh mac address-table
+Legend: 
+        * - primary entry, G - Gateway MAC, (R) - Routed MAC, O - Overlay MAC
+        age - seconds since last seen,+ - primary entry using vPC Peer-Link,
+        (T) - True, (F) - False, C - ControlPlane MAC, ~ - vsan
+   VLAN     MAC Address      Type      age     Secure NTFY Ports
+---------+-----------------+--------+---------+------+----+------------------
+*   10     44ae.254b.f2bf   dynamic  0         F      F    nve1(22.22.22.22)
+*   10     e8eb.3467.9e1b   dynamic  0         F      F    Eth1/46
+G    -     e8eb.347e.480f   static   -         F      F    sup-eth1(R)
+Leaf_A# 
+```
+----
+## Packet Capture (Ping HostA (1.1.1.10) ---> HostB (1.1.1.20))
 - Capture on Leaf_A`s int e1/1
 - Span to CPU
 ```
