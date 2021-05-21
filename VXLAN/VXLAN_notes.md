@@ -17,6 +17,8 @@
 
 - en VPC solo uno desencapsula, pero ambos encapsulan
 
+- VTEP es una interfaz
+
 ## VXLAN Packet Structure
 
 Outer MAC Header, Outer IP Header, Outer UDP Header, VXLAN Header, Original Layer 2 frame
@@ -25,7 +27,7 @@ UDP Port 4789
 
 ----
 ## Config
-### Bridging Config
+### Bridging Config (using Multicast)(Data plane learning)
 ```
 feature ospf
 feature pim
@@ -89,4 +91,207 @@ show nve interface
 show nve peers. ---> puede estar vacia si no hay trafico
 show nve vni
 ```
-### BGP EVPN Config
+----
+### BGP EVPN Config (using Ingress Replication)(Control Plane Learning)
+#### Config the underlay
+ - Routed Link
+ - MTU Size  
+```
+feature ospf
+system jumbomtu 9216
+router ospf 10
+```
+```
+int e1/49
+no sw
+ip add 10.10.10.1/30
+ip router ospf 10 area 0
+no shut
+```
+```
+int lo0
+ip add 1.1.1.1/32
+ip router ospf 10 area 0
+```
+#### Config the overlay
+ - Overlay Features
+ - Anycast Gateway vMAC
+ - BGP 
+```
+feature bgp
+feature interface-vlan
+feature vn-segment-vlan-based
+feature nv overlay
+nv overlay evpn
+```
+```
+fabric forwarding anycast-gateway-mac 0000.2222.3333  ---> MAC libre de escojer
+```
+```
+int nve1
+no shut
+source-interface lo0
+```
+```
+router bgp 65535
+router-id 1.1.1.1
+neighbor 2.2.2.2
+remote-as 65535
+update-source lo0
+address-family l2vpn evpn
+send-community
+send-community extended
+```
+#### The First Tenant
+- L3VNI
+- VRF
+- RD's and RT's
+- VTEPs
+- ARP Suppression
+- Head-end Replication
+- Anycast Gateway
+- EVPN
+```
+vlan 101
+vn-segment 900001
+```
+```
+vrf context Tenant-1
+vni 900001
+rd auto
+address-family ipv4 unicast
+route-target both auto
+route-target both auto evpn
+```
+```
+in vlan 101
+no shut
+vrf member Tenant-1
+ip forward
+```
+```
+int nve1
+member vni 5000
+suppress-arp
+ingress-replication protocol bgp
+member vni 900001 associate-vrf
+```
+```
+router bgp 65535
+vrf Tenant-1
+address-family ipv4 unicast
+advertise l2vpn evpn
+```
+```
+vlan 1000
+vn-segment 5000
+```
+```
+int vlan 1000
+no shut
+vrf member Tenant-1
+ip address 192.168.0.1/24.  ----> esto ip va repetida en el otro, por ser anycast gateway
+fabric forwarding mode anycast-gateway
+```
+```
+evpn
+vni 5000 l2
+rd auto
+route-target import auto
+route-target export auto
+```
+```
+int e1/1
+sw
+sw access vlan 1000
+no shut
+```
+Agregar otro????
+```
+vlan 1001
+vn-segment 5005
+```
+```
+int vlan 1001
+no shut
+vrf member Tenant-1
+ip address 192.168.10.1/24
+fabric forwarding mode anycast-gateway
+```
+```
+int nve1
+member vni 5005
+suppress-arp
+ingress-replication protocol bgp
+```
+```
+evpn
+vni 5005 l2
+rd auto
+route-target import auto
+route-target export auto
+```
+#### The Second Tenant
+```
+vrf context Tenant-2
+vni 900002
+rd auto
+address-family ipv4 unicast
+route-target both auto
+route-target both auto evpn
+```
+```
+vlan 102
+vn-segment 900002
+```
+```
+int vlan 102
+no shut
+vrf member Tenant-2
+ip forward
+```
+```
+vlan 900
+vn-segment 6000
+```
+```
+int vlan 900
+no shut
+vrf member Tenant-2
+ip address 192.168.0.1/24
+fabric forwarding mode anycast-gateway
+```
+```
+int e1/2
+sw
+sw access vlan 900
+no shut
+```
+```
+int nve1
+member vni 900002 associate-vrf
+member vni 6000
+suppress-arp
+ingress-replication protocol bgp
+```
+```
+evpn
+vni 6000 l2
+rd auto
+route-target import auto
+route-taget export auto
+```
+### Verfication
+```
+show bgp l2vpn evpn summary
+show nve peers
+show nve vni
+
+show ip arp suppression-cache detail
+
+show vxlan
+
+show l2route evpn mac all
+show l2route evpn mac-ip all
+show bgp l2vpn evpn
+```
