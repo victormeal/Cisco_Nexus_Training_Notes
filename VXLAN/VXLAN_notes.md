@@ -26,6 +26,14 @@ Outer MAC Header, Outer IP Header, Outer UDP Header, VXLAN Header, Original Laye
 UDP Port 4789
 
 ----
+## TroubleShooting Commands
+```
+sh mac address-table address <src>
+sh mac address-table address <dst>
+sh bgp l2vpn evpn <mac address src>
+sh bgp l2vpn evpn <mac address dst>
+```
+----
 ## Config
 ### Bridging Config (using Multicast)(Data plane learning)
 ```
