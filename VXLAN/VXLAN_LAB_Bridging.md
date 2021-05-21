@@ -6,13 +6,10 @@ hostname SPINE_01
 
 feature ospf
 feature pim
-feature interface-vlan
 
 ip pim rp-address 7.7.7.7 group-list 224.0.0.0/4
 ip pim ssm range 232.0.0.0/8
 vlan 1
-
-interface Vlan1
 
 interface Ethernet1/1
   ip address 192.168.1.1/30
