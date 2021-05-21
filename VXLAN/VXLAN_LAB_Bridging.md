@@ -1,4 +1,5 @@
 # VXLAN Bridging Config
+- Bridging: Same subnet but divided by L3
 ## Spine
 ```
 SPINE_01(config)# sh run
