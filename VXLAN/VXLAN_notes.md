@@ -25,6 +25,7 @@ UDP Port 4789
 
 ----
 ## Config
+### Bridging Config
 ```
 feature ospf
 feature pim
@@ -88,3 +89,4 @@ show nve interface
 show nve peers. ---> puede estar vacia si no hay trafico
 show nve vni
 ```
+### BGP EVPN Config
