@@ -43,7 +43,7 @@ vn-segment 5000
 ```
 ```
 system jumbomtu 9216
-system routing template-vxlan-scale
+system routing template-vxlan-scale   <--- este comando no esta
 ! changing the routing template needs a reboot
 
 copy r s
