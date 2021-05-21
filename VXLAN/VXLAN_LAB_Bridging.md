@@ -129,7 +129,11 @@ Leaf_B#
 ```
 ----
 # Packet Capture (Ping HostA (1.1.1.10) ---> HostB (1.1.1.20))
-Capture on Leaf_A`s int e1/1
+- Capture on Leaf_A`s int e1/1
+- Span to CPU
+```
+ethanalyzer local interface inband mirror display-filter icmp limit-captured-frames 0 detail 
+```
 ```
 Frame 7 (148 bytes on wire, 148 bytes captured)
     Arrival Time: May 21, 2021 21:24:48.390645000
