@@ -188,7 +188,7 @@ member vni 900001 associate-vrf
 router bgp 65535
 vrf Tenant-1
 address-family ipv4 unicast
-advertise l2vpn evpn
+advertise l2vpn evpn    ----> este comando ya no se usa en nuevas versiones, esta por default.
 ```
 ```
 vlan 1000
