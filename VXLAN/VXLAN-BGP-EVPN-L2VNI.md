@@ -317,7 +317,7 @@ host 3 -> ip 10.10.1.2/24 10.10.1.254
 ## Leaf1 (N3)
 ```
 vlan 999
-vn-segment 1009999
+vn-segment 100999
 ```
 ```
 vrf context TENANT1
@@ -356,7 +356,7 @@ no shut
 ## Leaf2 (N5)
 ```
 vlan 999
-vn-segment 1009999
+vn-segment 100999
 ```
 ```
 vrf context TENANT1
