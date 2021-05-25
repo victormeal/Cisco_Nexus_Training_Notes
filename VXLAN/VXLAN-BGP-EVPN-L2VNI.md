@@ -1,6 +1,6 @@
-#VXLAN BGP EVPN- L2VNI
-https://www.youtube.com/watch?v=faUd0vcRzI8
-##Spine (N1)
+# VXLAN BGP EVPN- L2VNI
+- https://www.youtube.com/watch?v=faUd0vcRzI8
+## Spine (N1)
 ```
 host N1
 
@@ -81,7 +81,7 @@ inherit peer VXLAN_LEAD
 ```
 ----
 
-##Leaf1 (N3)
+## Leaf1 (N3)
 ```
 host N3
 
@@ -186,7 +186,7 @@ no shut
 ```
 ----
 
-##Leaf2 (N5)
+## Leaf2 (N5)
 ```
 host N5
 
