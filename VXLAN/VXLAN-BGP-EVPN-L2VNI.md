@@ -63,7 +63,7 @@ update-source loopback0
 address-family ipv4 unicast
 send-community extended
 route-reflector-client
-soft-reconfiguration-inbound
+soft-reconfiguration inbound
 address-family l2vpn evpn
 send-community
 send-community extended
@@ -142,7 +142,7 @@ remote-as 64520
 update-source loopback0
 address-family ipv4 unicast
 send-community extended
-soft-reconfiguration-inbound
+soft-reconfiguration inbound
 address-family l2vpn evpn
 send-community
 send-community extended
@@ -247,7 +247,7 @@ remote-as 64520
 update-source loopback0
 address-family ipv4 unicast
 send-community extended
-soft-reconfiguration-inbound
+soft-reconfiguration inbound
 address-family l2vpn evpn
 send-community
 send-community extended
