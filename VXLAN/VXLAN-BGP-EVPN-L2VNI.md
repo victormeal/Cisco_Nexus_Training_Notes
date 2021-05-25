@@ -69,13 +69,13 @@ send-community
 send-community extended
 route-reflector-client
 neighbor 192.168.0.3
-inherit peer VXLAN_LEAD
+inherit peer VXLAN_LEAF
 !neighbor 192.168.0.4
-!inherit peer VXLAN_LEAD
+!inherit peer VXLAN_LEAF
 neighbor 192.168.0.5
-inherit peer VXLAN_LEAD
+inherit peer VXLAN_LEAF
 !neighbor 192.168.0.6
-!inherit peer VXLAN_LEAD
+!inherit peer VXLAN_LEAF
 
 
 ```
