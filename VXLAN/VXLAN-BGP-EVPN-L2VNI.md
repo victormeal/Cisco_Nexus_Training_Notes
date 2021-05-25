@@ -155,7 +155,7 @@ inherit peer VXLAN_SPINE
 hardware access-list tcam region arp-ether 256
 ```
 ```
-fabric forwarding anycast-gatewat-mac 0000.0011.1234
+fabric forwarding anycast-gateway-mac 0000.0011.1234
 ```
 ```
 vlan 10
@@ -260,7 +260,7 @@ inherit peer VXLAN_SPINE
 hardware access-list tcam region arp-ether 256
 ```
 ```
-fabric forwarding anycast-gatewat-mac 0000.0011.1234
+fabric forwarding anycast-gateway-mac 0000.0011.1234
 ```
 ```
 vlan 10
