@@ -310,3 +310,84 @@ show bgp l2vpn evpn vni-id 100010
 ## Hosts
 host 1 -> ip 10.10.1.1/24 10.10.1.254
 host 3 -> ip 10.10.1.2/24 10.10.1.254
+
+----
+# VXLAN BGP EVPN- L3VNI
+- https://www.youtube.com/watch?v=pu21qr3b1GA
+## Leaf1 (N3)
+```
+vlan 999
+vn-segment 1009999
+```
+```
+vrf context TENANT1
+vni 100999
+rd auto
+address-family ipv4 unicast
+route-target both auto
+route-target both auto evpn
+```
+```
+int vlan999
+no shut
+vrf member TENANT1
+ip forward
+```
+```
+int nve1
+member vni 100999 associate-vrf
+
+router bgp 64520
+vrf TENANT1
+log-neighbor-changes
+address-family ipv4 unicast
+network 10.10.1.0/24
+advertise l2vpn evpn
+```
+```
+! se borra la config al asociarlo a una vrf
+int vlan10
+vrf member TENANT1
+ip address 10.10.1.254/24
+fabric forwarding mode anycast-gateway
+no shut
+```
+----
+## Leaf2 (N5)
+```
+vlan 999
+vn-segment 1009999
+```
+```
+vrf context TENANT1
+vni 100999
+rd auto
+address-family ipv4 unicast
+route-target both auto
+route-target both auto evpn
+```
+```
+int vlan999
+no shut
+vrf member TENANT1
+ip forward
+```
+```
+int nve1
+member vni 100999 associate-vrf
+
+router bgp 64520
+vrf TENANT1
+log-neighbor-changes
+address-family ipv4 unicast
+network 10.10.1.0/24
+advertise l2vpn evpn
+```
+```
+! se borra la config al asociarlo a una vrf
+int vlan10
+vrf member TENANT1
+ip address 10.10.1.254/24
+fabric forwarding mode anycast-gateway
+no shut
+```
