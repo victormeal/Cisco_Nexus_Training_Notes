@@ -94,6 +94,8 @@ https://cdetsng.cisco.com/summary/#/defect/CSCvj87211
 - version fidelity 
 https://wwwin-version-fidelity.cisco.com/version_fidelity/vf/ui
 
+- Wireshark Capture and Display Filters
+https://techzone.cisco.com/t5/NX-OS-Memory-Crash/Wireshark-Capture-and-Display-Filters/ta-p/737315
 
 
 
