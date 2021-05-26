@@ -1,5 +1,5 @@
 # Power Supply
-
+- Make sure that there is nothing wrong with the power cable and the power source
 ## Troubleshooting Commands
 - `show environment power`
 - `show inventory`
