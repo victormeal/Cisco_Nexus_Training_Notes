@@ -4,7 +4,7 @@
 - `show environment power`
 - `show inventory`
 ```
-show version`
+show version
 show module
 show logging logfile
 show logging nvram
