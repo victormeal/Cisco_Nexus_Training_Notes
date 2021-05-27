@@ -66,4 +66,5 @@
 ----
 ## Miscellaneous
 - `sh hardware capacity forwarding | b TCAM`
+- `show accounting log`
 
