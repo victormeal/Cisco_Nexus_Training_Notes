@@ -28,3 +28,33 @@ Please provide me the following information for processed your RMA:
 10.          Any special instructions that should be added to the RMA such as security or lockbox codes?
 
 As soon as I get the above I will process your RMA
+
+
+----
+
+RMA information
+
+Shipping Details
+Company name:
+Street and number:
+Town/City:
+Zip/Postal code:
+Province/State:
+Country:
+
+Contact Details
+Contact Person:
+Contact Number:
+Contact Email:
+
+Product Details
+Product ID:
+Part S/N:
+Contract:
+
+SLA Details
+Site Access Available after 5:00 P.M. (local time): (Yes/No)
+Manned Site: (Yes/No)
+Leave Parts with Security: (Yes/No)
+Requested Part Delivery Time (schedule another time)? (Date & Time)
+Labor requested(y/n):
