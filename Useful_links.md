@@ -98,5 +98,7 @@ https://wwwin-version-fidelity.cisco.com/version_fidelity/vf/ui
 https://techzone.cisco.com/t5/NX-OS-Memory-Crash/Wireshark-Capture-and-Display-Filters/ta-p/737315
 
 
-
+- Check Device Coverage
+https://cway.cisco.com/sncheck/
+https://scripts.cisco.com/app/tfl_notepad/#
 
