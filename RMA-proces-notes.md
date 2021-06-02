@@ -5,6 +5,10 @@ llenar failure cat y subcat
 failure description
 send RMA to the customer
 
+- Check Device Coverage
+https://cway.cisco.com/sncheck/
+https://scripts.cisco.com/app/tfl_notepad/#
+
 le va llegar un correo al cliente, para que termine el proceso
 
 revisar si no es golden, si es golden tiene otro proceso mas especifico
