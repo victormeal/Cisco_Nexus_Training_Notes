@@ -1,5 +1,5 @@
 # EPLD Questions
-
+----
 Regarding the questions about ACI I cant give you a detailed answer because in our team we dont provide support to ACI platforms, we only cover NX-OS platforms. But feel free to open a case with the ACI team to have a better response.
 ----
 1. Do I need to upgrade the EPLD image equitant to this IOS image?
