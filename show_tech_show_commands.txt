@@ -1,0 +1,1124 @@
+show tech-support | i i `show > bootflash:show_tech_show_commands.txt
+
+`show switchname`
+`show interface mgmt0`
+`show module`
+`show module fabric`
+`show version`
+`show clock`
+`show interface transceiver detail`
+`show running`
+`show startup`
+`show logging log`
+`show accounting log`
+`show callhome`
+`show logging nvram`
+`show system uptime`
+`show callhome`
+`show license`
+`show license host-id`
+`show license usage`
+`show system internal license event-history`
+`show system internal license mem-stats`
+`show system internal license mem-stats detail`
+`show system exception-info`
+`show cores`
+`show system internal biosd messages`
+`show hardware capacity`
+`show hardware capacity module `
+`show hardware capacity interface`
+`show hardware capacity power`
+`show hardware capacity eobc`
+`show system resources module all `
+`show vdc resource`
+`show monitor`
+`show monitor internal event-history global`
+`show monitor session all`
+`show monitor internal errors`
+`show monitor internal info session all`
+`show monitor internal info fex`
+`show monitor internal info fpc`
+`show monitor internal logs`
+`show monitor internal event-history msgs`
+`show monitor internal info global-info`
+`show logging onboard boot-uptime`
+`show logging onboard card-boot-history`
+`show logging onboard card-first-power-on`
+`show logging onboard counter-stats`
+`show logging onboard credit-loss`
+`show logging onboard device-version`
+`show logging onboard environmental-history`
+`show logging onboard error-stats`
+`show logging onboard exception-log`
+ `show logging onboard interrupt-stats`
+`show logging onboard obfl-history`
+`show logging onboard obfl-logs`
+ `show logging onboard stack-trace`
+`show logging onboard status`
+`show logging onboard internal cardcl`
+`show logging onboard internal crdcfg`
+`show logging onboard internal kernel`
+`show logging onboard internal online-diag`
+`show logging onboard internal phy`
+`show logging onboard internal platform`
+`show logging onboard internal reset-reason`
+`show logging onboard internal xbar`
+`show system internal kernel msr-bank`
+`show system internal kernel nvram-messages previous`
+`show hardware`
+`show system reset-reason`
+`show inventory`
+`show module internal all`
+`show module internal event-history module 1`
+`show module internal exceptionlog module 1`
+ `show system reset-reason module 1`
+`show module internal activity module 1`
+`show module internal event-history msgs`
+`show module internal mem-stats detail`
+`show module internal event-history errors`
+`show system internal platform all`
+`show module internal exceptionlog`
+ `show system internal xbar all`
+`show system internal xbar event-history errors`
+`show system internal xbar event-history msgs`
+`show system internal xbar event-history info`
+`show system internal xbar event-history mcast-info`
+`show system internal xbar event-history lock`
+`show system internal xbar sw`
+`show system internal xbar sw detail`
+`show system internal xbar event-history module 1`
+`show environment`
+`show environment fan detail`
+`show hardware internal cpu-mac mgmt counters`
+`show hardware internal cpu-mac mgmt registers`
+`show hardware internal cpu-mac inband counters`
+`show system internal aipc event-history msgs`
+`show system internal aipc event-history errors`
+`show system internal kernel aipc`
+`show system internal kernel aipc-mcast`
+`show system internal flash`
+`show system internal urifs`
+`show sprom all`
+`show system internal cardclient cb`
+`show system internal cardclient logs`
+`show system internal cardclient lcsm`
+`show system internal cardclient lcsm_cb`
+`show system internal cardclient msgs`
+`show system internal crdcfg cb`
+`show system internal crdcfg events`
+`show system internal crdcfg msgs`
+`show system internal crdcfg logs`
+`show system internal crdcfg cards`
+`show system internal kernel malloc-stats`
+`show system internal kernel meminfo`
+`show system internal kernel messages`
+`show system internal kernel ide-statistics`
+`show hardware internal errors all`
+`show hardware internal statistics pktflow all`
+`show hardware internal statistics pktflow rates`
+`show system internal usd errors`
+`show hardware internal sprom event-log`
+`show hardware internal buffer info pkt-stats input`
+`show hardware internal buffer info pkt-stats input peak`
+`show hardware internal buffer info pkt-stats`
+`show hardware internal buffer info pkt-stats peak`
+`show system internal mts sup sap 172 queue_stats`
+`show system internal mts sup sap 176 queue_stats`
+`show system internal pixm errors`
+`show system internal pixm info txn-log-buffer`
+`show system internal pixm info global-info`
+`show system internal pixm event-history msgs`
+`show system internal pixm mem-stats detail`
+`show system internal pixm event-history all`
+`show interface brief`
+`show interface`
+`show system internal ethpm errors`
+`show system internal ethpm lock`
+      0x0000:  02 01 00 00 00 00 00 02 `show system internal ethpm mem-stats`
+`show system internal ethpm msgs`
+`show system internal ethpm info all`
+`show system internal sysmgr service name ethpm`
+`show system internal im errors`
+`show system internal im info global`
+`show system internal im lock`
+      0x0000:  00 00 00 00 00 00 00 01 `show system internal im mem-stats`
+`show system internal im msgs`
+`show system internal vmm all`
+`show system internal vmm event-history module 1`
+`show system internal vmm activity module 1`
+`show system internal vmm msgs`
+`show system internal vmm mem-stats detail`
+`show system internal vmm errors`
+`show system internal plugin event-history errors`
+`show system internal plugin event-history msgs`
+`show system internal plugin info`
+`show system internal plugin event-history fsm load`
+`show system internal plugin event-history fsm unload`
+`show system internal sysmgr event-history msgs`
+`show system internal sysmgr event-history errors`
+`show system internal sysmgr state`
+`show system internal sysmgr service all`
+`show system internal sysmgr service all details`
+`show system internal sysmgr service local details`
+`show system internal log sysmgr sup-reset`
+`show system internal log sysmgr failed-standby`
+`show system internal log sysmgr gsyncctrl`
+`show system internal log sysmgr infra-convert`
+`show system internal log sysmgr cfgctrl`
+`show system internal log sysmgr standby-sup-reset`
+`show system internal log sysmgr warm-swover`
+`show system internal log sysmgr verctrl`
+`show system internal fs-daemon event-history errors`
+`show system internal fs-daemon event-history msgs`
+`show system internal fs-daemon mount-unmount-history`
+`show system internal sysmgr bootupstats`
+`show system internal sysmgr gsyncstats`
+`show system internal sysmgr swoverstats`
+`show system internal sysmgr startup-config locks`
+`show system internal sysmgr startup-config state`
+`show system internal feature-mgr event-history errors`
+`show system internal feature-mgr event-history msgs`
+`show system internal feature-mgr event-history errors`
+`show system internal feature-mgr event-history msgs`
+`show system internal mts event-history errors`
+`show system internal mts event-history msgs`
+`show system internal mts buffers`
+`show system internal mts buffers summary`
+`show system internal mts buffers details`
+`show system internal mts sup state current`
+`show system internal mts sup state history`
+`show system standby manual-boot`
+`show system internal log boot kickstart`
+`show system internal log boot system`
+`show system redundancy ha status`
+`show system redundancy status`
+`show redundancy status`
+`show system internal redundancy status`
+`show system internal redundancy event-history`
+`show system internal psshelper gsdbs`
+`show system internal psshelper gsdb-requests`
+`show system internal psshelper event-history errors`
+`show system internal psshelper event-history msgs`
+`show system internal sysmgr vdc 1 state`
+`show system internal sysmgr vdc 1 service all details`
+`show system internal sysmgr vdc 1 service local details`
+`show system internal sysmgr vdc 1 bootupstats`
+`show system internal sysmgr vdc 1 gsyncstats`
+`show system internal sysmgr vdc 1 swoverstats`
+`show system internal log sysmgr vdc 1 sup-reset`
+`show system internal log sysmgr vdc 1 failed-standby`
+`show system internal log sysmgr vdc 1 cfgctrl`
+`show system internal log sysmgr vdc 1 standby-sup-reset`
+`show system internal feature-mgr feature state`
+`show role`
+`show system internal vshd config-info`
+`show system internal ascii-cfg runtime info`
+`show system internal ascii-cfg event-history`
+`show system internal clis errors`
+`show system internal clis feature`
+`show system internal clis running-config`
+`show system internal clis startup-config`
+`show process memory clis shared`
+`show cli alias`
+`show cli dynamic integers`
+`show cli dynamic strings`
+`show cli internal ctags`
+`show cli internal pss`
+`show cli internal pss startup`
+`show cli internal mem-stats detail`
+`show cli internal pid`
+`show cli internal sdb`
+`show cli internal sdwrap`
+`show cli internal server`
+`show cli variables`
+`show system internal clis event-history client`
+`show system internal clis event-history errors`
+`show system internal clis event-history ha`
+`show system internal clis event-history nvdb`
+`show system internal clis event-history parser`
+`show spanning-tree internal errors`
+`show spanning-tree internal interactions`
+`show spanning-tree internal msgs`
+`show spanning-tree internal mem-stats`
+`show spanning-tree internal flc-info`
+`show spanning-tree internal info global`
+`show spanning-tree internal info sps-pending`
+`show spanning-tree internal info sps-q-stats`
+`show spanning-tree internal info issu`
+`show spanning-tree internal event-history all brief`
+`show spanning-tree internal event-history vpc sps`
+`show spanning-tree internal event-history vpc pes`
+`show spanning-tree active`
+`show spanning-tree summary`
+`show spanning-tree detail`
+`show spanning-tree mst configuration`
+`show system internal eltm debugs`
+`show system internal eltm msgs`
+`show system internal eltm info interface summary`
+`show system internal eltm info interface brief`
+`show system internal eltm info interface all`
+`show system internal eltm info vlan summary`
+`show system internal eltm info vlan brief`
+`show system internal eltm info vlan all`
+`show system internal eltm mem-stats detail`
+`show cdp all`
+`show cdp global`
+`show cdp neighbors`
+`show cdp neighbors detail`
+`show cdp internal mem-stats detail`
+`show cdp internal event-history msgs`
+`show cdp internal event-history errors`
+`show cdp internal event-history debugs`
+`show cdp internal runtime-contexts`
+`show cdp internal global-info`
+`show system internal aclmgr status`
+`show system internal aclmgr log`
+`show system internal aclmgr ppf subscription`
+`show system internal aclmgr ppf sessions`
+`show system internal aclmgr ppf dsets`
+`show system internal aclmgr ppf nodes`
+`show system internal aclmgr dictionaries`
+`show system internal aclmgr state-cache`
+`show access-lists`
+`show access-lists summary`
+`show vlan access-map`
+`show object-group`
+`show time-range`
+`show system internal aclmgr event-history msgs`
+`show system internal aclmgr event-history sessions`
+`show system internal aclmgr event-history locks`
+`show system internal aclmgr event-history errors`
+`show system internal aclmgr time-range`
+`show system internal aclmgr sessions`
+`show system internal aclmgr statistics buckets`
+`show tech-support ptp`
+`show install all status`
+`show system internal log install history`
+`show system internal log install`
+`show system internal log install details`
+`show system internal log sysmgr rtdbctrl`
+`show system internal log install issu-failure-reason`
+`show system internal log issu-helper`
+`show install all failure-reason`
+`show snmp`
+`show snmp community`
+`show snmp engineID`
+`show snmp group`
+`show snmp host`
+`show snmp sessions`
+`show snmp trap`
+`show snmp user`
+`show system internal snmp event-history pktdump`
+`show system internal snmp mem-stats detail`
+`show snmp source-interface`
+`show snmp internal climib loaded`
+`show snmp internal climib trace`
+`show snmp internal oid registered`
+`show snmp internal loaded mibs`
+`show snmpmib internal errors`
+`show snmpmib internal event-history errors`
+`show snmpmib internal event-history msgs`
+`show snmpmib internal info`
+`show snmpmib internal info global`
+`show snmpmib internal mem-stats`
+`show snmpmib internal mem-stats detail`
+`show snmpmib internal msgs`
+`show running-config snmp`
+`show ip arp internal event-history cli `
+`show ip arp vrf all `
+`show ip arp static vrf all `
+`show ip arp summary vrf all `
+`show ip arp detail vrf all `
+`show ip arp statistics vrf all `
+`show ip arp statistics interface-all vrf all `
+`show ip arp snmp pttree typeall vrf all `
+`show ip arp sync-entries vrf all `
+`show ip arp off-list `
+`show ip arp vpc-statistics `
+`show ip arp internal info `
+`show ip arp cache interface `
+`show ip arp cache brief `
+`show ip arp client `
+`show ip arp vaddr `
+`show ip arp suppression-cache detail `
+`show ip arp suppression-cache statistics`
+`show ip arp suppression topo-info `
+`show system internal sysmgr service name arp `
+`show ip arp internal mem-stats `
+`show ip arp internal mem-stats detail `
+`show ip arp internal library-info `
+`show ip arp internal event-history errors `
+`show ip arp internal event-history msgs `
+`show ip arp internal event-history event `
+`show ip arp internal event-history control`
+`show ip arp internal event-history packet `
+`show ip arp internal event-history sync-event `
+`show ip arp internal event-history sync-error `
+`show ip arp internal event-history ip-sync-event `
+`show ip arp internal event-history ha `
+`show ip arp internal event-history snmp `
+`show ip arp internal event-history lcache `
+`show ip arp internal event-history lcache-errors `
+`show ip arp internal event-history client-errors `
+`show ip arp internal event-history client-event `
+`show ip arp internal event-history suppression-event `
+`show ip arp internal event-history suppression-errors `
+`show ip arp internal event-history sm-trace `
+`show ip arp internal event-history event-ext `
+`show run bgp `
+`show bgp process `
+`show bgp statistics `
+`show bgp vrf all all summary `
+`show bgp vrf all all neighbors `
+`show bgp sessions `
+`show bgp convergence `
+`show bgp paths `
+`show bgp internal mem-stats all `
+`show system internal sysmgr service name bgp `
+`show system internal feature-mgr feature state | grep bgp `
+`show bgp internal event-history cli`
+`show bgp internal event-history detail`
+`show bgp internal event-history errors`
+`show bgp internal event-history events`
+`show bgp internal event-history logs`
+`show bgp internal event-history msgs`
+`show bgp internal event-history periodic`
+`show bgp internal mem-stats all detail`
+`show bgp vrf all all`
+`show bgp vrf all all nexthop-database`
+`show ipv6 icmp internal event-history cli `
+`show ipv6 icmp interface detail vrf all `
+`show ipv6 nd interface detail vrf all `
+`show ipv6 nd interface prefix full vrf all `
+`show ipv6 nd interface route vrf all `
+`show ipv6 icmp vaddr link-local detail vrf all `
+`show ipv6 icmp vaddr pt-tree vrf all `
+`show ipv6 icmp vaddr global vrf all `
+`show ipv6 nd rt-pref global pt`
+`show ipv6 routers vrf all `
+`show system internal icmpv6 client `
+`show ipv6 icmp adjacency detail vrf all `
+`show ipv6 icmp sync-entries vrf all `
+`show ipv6 icmp off-list `
+`show ipv6 icmp global traffic `
+`show ipv6 icmp vpc-statistics `
+`show system internal icmpv6 internal info `
+`show system internal icmpv6 library-info `
+`show system internal icmpv6 buffers `
+`show system internal icmpv6 cache interface `
+`show system internal icmpv6 cache brief `
+`show system internal sysmgr service name icmpv6 `
+`show system internal icmpv6 internal mem-stats all detail `
+`show ipv6 icmp internal event-history errors `
+`show ipv6 icmp internal event-history msgs `
+`show ipv6 icmp internal event-history icmpv6-internal `
+`show ipv6 icmp internal event-history nd `
+`show ipv6 icmp internal event-history vip-nd `
+`show ipv6 icmp internal event-history sync-event `
+`show ipv6 icmp internal event-history ipv6-sync-event `
+`show ipv6 icmp internal event-history ha `
+`show ipv6 icmp internal event-history vrf `
+`show ipv6 icmp internal event-history snmp `
+`show ipv6 icmp internal event-history lcache `
+`show ipv6 icmp internal event-history lcache-errors `
+`show system internal npacl acl `
+`show system internal npacl ppf `
+`show system internal npacl event-history acl `
+`show system internal npacl event-history `
+`show running-config igmp`
+`show system internal sysmgr service name igmp`
+`show system internal feature-mgr feature state | include igmp`
+`show processes threads igmp`
+`show ip client igmp`
+`show ip igmp groups vrf all`
+`show ip igmp groups vrf all summary`
+`show ip igmp internal`
+`show ip igmp internal errors`
+`show ip igmp route vrf all`
+`show ip igmp interface vrf all`
+`show ip igmp local-groups vrf all`
+`show ip igmp internal mem-stats all detail`
+`show ip igmp internal event-history errors`
+`show ip igmp internal event-history msgs`
+`show ip igmp internal event-history mtrace`
+`show ip igmp internal event-history igmp-internal`
+`show ip igmp internal event-history vrf`
+`show ip igmp internal event-history events`
+`show ip igmp internal event-history debugs`
+`show ip igmp internal event-history policy`
+`show ip igmp internal event-history cli`
+`show ip igmp internal event-history ha`
+`show ip igmp internal event-history mvr`
+`show ip igmp internal vpc`
+`show ip igmp internal pim-cache vrf all`
+`show ip igmp internal mrib-cache vrf all`
+`show ip igmp internal mrib-txlist vrf all`
+`show ip igmp internal iod-cache`
+`show ip igmp internal mrib-buffers`
+`show ip igmp snooping groups detail`
+`show ip igmp snooping querier`
+`show ip igmp snooping mrouter detail`
+`show ip igmp snooping`
+`show ip igmp snooping statistics`
+`show ip igmp snooping report-policy statistics`
+`show ip igmp snooping explicit-tracking`
+`show ip igmp snooping internal ribs`
+`show ip igmp snooping internal memory`
+`show ip igmp snooping internal route-txlist`
+`show ip igmp snooping internal event-history vlan`
+`show ip igmp snooping internal event-history vlan-events`
+`show ip igmp snooping internal event-history igmp-snoop-internal`
+`show ip igmp snooping internal event-history mfdm`
+`show ip igmp snooping internal event-history mfdm-sum`
+`show ip igmp snooping internal event-history VPC`
+`show ip igmp snooping internal event-history rib`
+`show ip internal event-history cli `
+`show ip interface brief vrf all `
+`show ip interface vaddr vrf all `
+`show ip static-route vrf all `
+`show ip static-route multicast vrf all `
+`show ip static-route internal vrf all `
+`show ip static-route multicast internal vrf all `
+`show ip router-id vrf all `
+`show buffers ip  `
+`show ip client `
+`show ip traffic `
+`show ip local-pt vrf all `
+`show ip process api vrf all `
+`show ip route summary vrf all `
+`show ip route detail vrf all `
+`show ip internal acl status `
+`show ip internal pbr status `
+`show ip internal ppf `
+`show ip internal info `
+`show ip internal boot-info `
+`show ip cache interface `
+`show ip cache brief `
+`show ip internal mem-stats all `
+`show ip internal mem-stats all detail `
+`show ip internal info interface all `
+`show ip internal event-history errors `
+`show ip internal event-history vrf-errors `
+`show ip internal event-history ha `
+`show ip internal event-history ipc `
+`show ip internal event-history snmp `
+`show ip internal event-history log `
+`show ip internal event-history msgs `
+`show ip internal event-history arp-miss `
+`show ip internal event-history ppf `
+`show ip internal info unnumbered `
+`show ip stats`
+`show ip internal event-history static-rt`
+`show ip internal info directed-broadcast`
+`show ipv6 interface brief vrf all `
+`show ipv6 interface detail vrf all `
+`show ipv6 static-route vrf all `
+`show ipv6 interface global`
+`show ipv6 neighbor static `
+`show ipv6 statistics `
+`show ipv6 client `
+`show ipv6 traffic detail `
+`show ipv6 fragments `
+`show ipv6 internal info`
+`show ipv6 route summary vrf all `
+`show ipv6 route detail vrf all `
+`show ipv6 process vrf all `
+`show ipv6 mtu vrf all `
+`show ipv6 mtu statistics `
+`show ipv6 local-pt vrf all `
+`show ipv6 cache interface `
+`show ipv6 cache brief `
+`show ipv6 internal mem-stats all `
+`show ipv6 internal mem-stats all detail`
+`show ipv6 internal event-history errors`
+`show ipv6 internal event-history ha`
+`show ipv6 internal event-history sdb`
+`show ipv6 internal event-history ipc`
+`show ipv6 internal event-history snmp`
+`show ipv6 internal event-history log`
+`show ipv6 internal event-history msgs`
+`show system internal adjmgr internal event-history cli`
+`show ip adjacency vrf all`
+`show ip adjacency detail vrf all`
+`show ip adjacency non-best vrf all`
+`show ip adjacency summary vrf all`
+`show ip adjacency statistics vrf all`
+`show ip adjacency throttle statistics vrf all`
+`show ip adjacency pt`
+`show ip adjacency pt statistics`
+`show ip adjacency pt consistency`
+`show ipv6 adjacency vrf all`
+`show ipv6 adjacency detail vrf all`
+`show ipv6 adjacency non-best vrf all`
+`show ipv6 adjacency summary vrf all`
+`show ipv6 adjacency statistics vrf all`
+`show ipv6 adjacency throttle statistics vrf all`
+`show ipv6 adjacency subnet-prefix vrf all`
+`show ipv6 adjacency aggregate-prefix vrf all`
+`show system internal sysmgr service name adjmgr`
+`show system internal adjmgr client index`
+`show system internal adjmgr cache interface`
+`show system internal adjmgr cache brief`
+`show system internal adjmgr internal info`
+`show system internal adjmgr internal mem-stats all`
+`show system internal adjmgr internal mem-stats all detail`
+`show system internal adjmgr cc statistics`
+`show system internal adjmgr cc pt`
+`show system internal adjmgr cc pt consistency`
+`show system internal adjmgr cc result`
+`show system internal adjmgr library-info`
+`show system internal adjmgr internal event-history errors`
+`show system internal adjmgr internal event-history msgs`
+`show system internal adjmgr internal event-history ipc`
+`show system internal adjmgr internal event-history events`
+`show system internal adjmgr internal event-history control`
+`show system internal adjmgr internal event-history ha`
+`show system internal adjmgr internal event-history sdb`
+`show system internal adjmgr internal event-history stats`
+`show system internal adjmgr internal event-history lcache`
+`show system internal adjmgr internal event-history lcache-errors`
+`show system internal buffers`
+`show system internal frame traffic`
+`show hardware internal cpu-mac inband stats`
+`show policy-map interface control-plane`
+`show hardware rate-limit`
+`show system internal pktmgr client filter`
+`show system internal pktmgr client`
+`show system internal pktmgr cache interface`
+`show system internal pktmgr cache brief`
+`show system internal pktmgr cache vlan`
+`show system internal pktmgr cache pc`
+`show system internal pktmgr cache sub-intf`
+`show system internal pktmgr internal vdc global-stats`
+`show system internal pktmgr internal vdc mgmt`
+`show system internal pktmgr internal vdc mgmt-vdc`
+`show system internal pktmgr internal vdc inband detail`
+`show system internal sysmgr service name netstack`
+`show system internal pktmgr internal mem-stats`
+`show system internal pktmgr internal mem-stats detail`
+`show system internal pktmgr library-info`
+`show system internal pktmgr internal event-history control`
+`show system internal pktmgr internal event-history errors`
+`show system internal pktmgr internal event-history ha`
+`show system internal pktmgr internal event-history pkt-errors`
+`show system internal pktmgr internal event-history log`
+`show system internal pktmgr internal event-history msgs`
+`show system internal pktmgr internal event-history lcache-err`
+`show system internal pktmgr internal event-history lcache-trace`
+`show sockets buffers`
+`show sockets statistics all`
+`show sockets connection`
+`show sockets connection detail`
+`show sockets client detail`
+`show sockets internal mem-stats`
+`show sockets internal mem-stats detail`
+`show sockets internal dispatch-statistics`
+`show sockets internal event-history errors`
+`show sockets internal event-history ha`
+`show sockets internal event-history event`
+`show sockets internal event-history log`
+`show sockets internal event-history msgs`
+`show sockets internal event-history proto`
+`show sockets internal event-history setup`
+`show system internal sysmgr service name l3vm `
+`show vrf `
+`show vrf interface `
+`show vrf topology `
+`show system internal l3vm  `
+`show system internal l3vm sdb vrf `
+`show system internal l3vm sdb interface `
+`show system internal l3vm sdb topology `
+`show system internal l3vm mem-stats `
+`show running-config ospf `
+`show ip ospf vrf all `
+`show ip ospf ha vrf all `
+`show ip ospf interface vrf all `
+`show ip ospf virtual-links vrf all `
+`show ip ospf neighbor detail vrf all `
+`show ip ospf database vrf all `
+`show ip ospf database detail vrf all `
+`show ip ospf summary-address vrf all `
+`show ip ospf border-routers vrf all `
+`show ip ospf route summary vrf all `
+`show ip ospf route vrf all `
+`show ip ospf traffic vrf all `
+`show ip ospf statistics vrf all `
+`show ip ospf internal vrf all `
+`show ip ospf internal mem-stats detail `
+`show ip ospf internal ha`
+`show system internal sysmgr service name ospf `
+`show system internal feature-mgr feature state | grep ospf `
+`show ip ospf internal event-history msgs `
+`show ip ospf internal event-history errors `
+`show ip ospf internal event-history adjacency `
+`show ip ospf internal event-history event `
+`show ip ospf internal event-history flooding `
+`show ip ospf internal event-history ha `
+`show ip ospf internal event-history lsa `
+`show ip ospf internal event-history cli `
+`show ip ospf internal event-history redistribution `
+`show ip ospf internal event-history spf `
+`show running-config pim `
+`show ip pim group-range vrf all `
+`show ip pim interface vrf all `
+`show ip pim neighbor vrf all `
+`show ip pim route vrf all `
+`show ip pim route internal vrf all `
+`show ip pim rp vrf all `
+`show ip pim df vrf all `
+`show ip pim statistics vrf all `
+`show system internal sysmgr service name pim `
+`show system internal feature-mgr feature state | include pim `
+`show ip pim policy statistics register-policy vrf all `
+`show ip pim policy statistics bsr bsr-policy vrf all `
+`show ip pim policy statistics bsr rp-candidate-policy vrf all `
+`show ip pim policy statistics auto-rp mapping-agent-policy vrf all `
+`show ip pim policy statistics auto-rp rp-candidate-policy vrf all `
+`show ip pim internal mem-stats all detail `
+`show ip pim internal event-history cli `
+`show ip pim internal event-history errors `
+`show ip pim internal event-history hello `
+`show ip pim internal event-history join-prune `
+`show ip pim internal event-history join-prune-summary `
+`show ip pim internal event-history msgs `
+`show ip pim internal event-history null-register `
+`show ip pim internal event-history packet `
+`show ip pim internal event-history pim-internal `
+`show ip pim internal event-history rp `
+`show ip pim internal event-history vpc `
+`show ip pim internal event-history vrf `
+`show ip pim internal vpc `
+`show ip pim internal vpc rpf-source `
+`show running-config rpm `
+`show route-map `
+`show ip prefix-list `
+`show ipv6 prefix-list `
+`show mac-list `
+`show ip as-path access-list `
+`show ip community-list `
+`show ip extcommunity-list `
+`show system internal rpm state `
+`show system internal rpm clients `
+`show system internal rpm event-history errors `
+`show system internal rpm route-map `
+`show system internal rpm ip-prefix-list `
+`show system internal rpm ipv6-prefix-list `
+`show system internal rpm mac-list `
+`show system internal rpm as-path `
+`show system internal rpm community-list `
+`show system internal rpm extcommunity-list `
+`show system internal sysmgr service name rpm `
+`show system internal feature-mgr feature state | inc ignore-case pbr `
+`show system internal rpm route-map ppf `
+`show system internal rpm ppf `
+`show system internal rpm event-history msgs `
+`show system internal rpm event-history trace `
+`show system internal rpm event-history events `
+`show system internal rpm event-history rsw `
+`show system internal rpm mem-stats detail `
+`show system internal spm event-history errors`
+`show system internal spm ppf all`
+`show system internal spm info`
+`show system internal spm event-history msgs`
+`show system internal spm mem-stats detail`
+`show system internal access-list`
+`show system internal access-list resource ipv6-compression detail`
+`show system internal access-list resource l4ops detail`
+`show system internal access-list resource redirect detail`
+`show system internal access-list resource utilization`
+`show system internal access-list status`
+`show hardware rate-limiter`
+`show port-channel load-balance`
+`show system internal pltfm_config info`
+`show system internal pltfm_config mem-stats`
+`show system internal pltfm_config event-history errors`
+`show system internal pfstat info`
+`show system internal pfstat mem-stats`
+`show system internal pfstat event-history sysev`
+`show system internal pfstat event-history errors`
+`show vdc detail`
+`show vdc internal bitmaps`
+`show vdc membership`
+`show vdc membership status`
+`show vdc shared membership`
+`show vdc internal msgs`
+`show vdc internal errors`
+`show vdc internal mem-stats`
+`show vdc internal port-hash`
+`show vdc internal mac_address_table`
+`show vdc internal pss interface`
+`show vdc internal pss`
+`show system internal vmm all`
+`show system internal vmm event-history module 1`
+`show system internal vmm activity module 1`
+`show system internal vmm msgs`
+`show system internal vmm mem-stats detail`
+`show system internal vmm errors`
+`show resource internal event-history msgs`
+`show resource internal event-history errors`
+`show resource internal info`
+`show system internal pss kernel memstats`
+`show system internal pss kernel list`
+`show system internal psshelper global-svc vmm-msgs`
+2021 Jun 02 13:22:34.173146: EV_PSSHLPR_KNOWN_LC_ADDEV_PSSHLPR_KNOWN_LC_ADD:  node 0x102 vdcid 1 nr_rcvrs 1`show system internal psshelper global-svc gsdb-requests`
+`show system internal pss dump volatile:/dev/shm/vdc_mgr_config`
+`show system internal pss dump volatile:/dev/shm/vdc_mgr_data`
+`show system internal pss dump volatile:/dev/shm/vdc_mgr_sdb`
+`show system internal pss dump volatile:/dev/shm/res_mgr_config`
+`show vdc internal event-history vdc_id 1`
+`show system internal pss dump volatile:/dev/shm/res_mgr_res_2_vdc_1_data_pss`
+`show system internal pss dump volatile:/dev/shm/res_mgr_res_4_vdc_1_data_pss`
+`show system internal pss dump volatile:/dev/shm/res_mgr_res_7_vdc_1_data_pss`
+`show system internal pss dump volatile:/dev/shm/res_mgr_res_9_vdc_1_data_pss`
+`show system internal pss dump volatile:/dev/shm/res_mgr_res_10_vdc_1_data_pss`
+`show system internal pss dump volatile:/dev/shm/res_mgr_res_11_vdc_1_data_pss`
+`show system internal pss dump volatile:/dev/shm/res_mgr_res_13_vdc_1_data_pss`
+`show system internal pss dump volatile:/dev/shm/res_mgr_res_14_vdc_1_data_pss`
+`show startup-config vdc`
+`show running-config vdc`
+`show system internal ipqos event-history msgs`
+`show system internal ipqos event-history errors`
+`show system internal ipqos class-map type qos`
+`show system internal ipqos class-map type queuing`
+`show system internal ipqos class-map type network-qos`
+`show system internal ipqos policy-map type qos`
+`show system internal ipqos policy-map type queuing`
+`show system internal ipqos policy-map type network-qos`
+`show system internal ipqos global-defaults`
+`show system internal ipqos locks`
+`show system internal ipqos msg-log`
+`show system internal ipqos event-history locks`
+`show system internal ipqos event-history mts-msgs`
+`show system internal ipqos event-history sessions`
+`show system internal ipqos event-history distribution`
+`show system internal ipqos ppf-lib`
+`show system internal ipqos mem-stats detail`
+`show system internal ipqos port-node`
+`show system internal ipqos vlan-tbl 1-4094`
+`show system internal ipqos log`
+`show system internal ipqos statistics bucket`
+`show system internal ipqos status`
+`show system internal ipqos session`
+`show system internal ipqos vlmgr fsm global`
+`show system internal ipqos vlmgr info`
+`show qos dcbxp info`
+Ethernet1/60       No/No           No/No           No/No           No/No           No/No       `show system internal ipqos event-history config session all`
+`show system internal ipqos session context`
+`show class-map type qos`
+`show class-map type queuing`
+`show class-map type network-qos`
+`show policy-map type qos`
+`show policy-map type queuing`
+`show policy-map type network-qos`
+`show policy-map interface brief`
+`show policy-map system`
+`show interface priority-flow-control`
+`show system internal ipqos policy-map statistics interface`
+`show system internal ipqos policy-map statistics vlan`
+`show vpc brief`
+`show running-config vpc`
+`show system internal vpcm event-history errors`
+`show system internal vpcm event-history msgs`
+`show system internal vpcm event-history interactions`
+`show system internal vpcm info all`
+`show system internal vpcm info global`
+`show lldp neighbors`
+`show lldp neighbors detail`
+`show lldp tlv-select`
+`show lldp timers`
+`show lldp traffic`
+`show system internal lldp event-history msgs`
+`show system internal lldp event-history errors`
+`show system internal lldp info`
+`show tech-support satmgr`
+`show port-channel summary`
+`show port-channel internal event-history all`
+`show port-channel internal event-history errors`
+`show port-channel internal event-history msgs`
+`show port-channel internal event-history lock`
+`show port-channel internal mem-stats detail`
+`show port-channel usage`
+`show port-channel internal sdb`
+`show lacp internal info all`
+`show lacp internal event-history errors`
+`show lacp internal event-history msgs`
+`show lacp internal event-history lock`
+      0x0000:  01 00 00 00 00 74 00 1a 00 00 00 00 `show lacp internal event-history global`
+`show lacp internal mem-stats detail`
+`show lacp counters`
+`show forwarding distribution internal error counts`
+`show forwarding distribution internal errors`
+`show forwarding distribution internal counters`
+`show system internal mfdm errors`
+`show system internal mfdm info statistics`
+`show track`
+`show track brief`
+`show track internal errors`
+`show track internal msgs`
+`show track internal event-history msgs`
+`show track internal event-history errors`
+`show track internal info counters`
+`show track internal mem-stats detail`
+`show track internal mem-stats track-only`
+`show event manager environment all`
+`show event manager event-types all`
+`show event manager policy internal`
+`show event manager policy internal inactive`
+`show event manager system-policy all`
+`show event manager script system all`
+Script not found`show event manager internal clients all`
+`show event manager internal evms debug counters`
+`show event manager internal evms mem-stats detail`
+`show event manager internal evms errors`
+`show event manager internal evms msgs`
+`show event manager internal evmc debug counters`
+`show event manager internal evmc mem-stats detail`
+`show event manager internal evmc errors`
+`show event manager internal evmc msgs`
+`show diagnostic content module all`
+`show diagnostic result module all detail`
+`show diagnostic internal diagmgr errors`
+`show diagnostic internal diagmgr mem-stats detail`
+`show diagnostic internal diagmgr msgs`
+`show diagnostic events`
+`show diagnostic internal port_lb info`
+`show diagnostic internal port_lb errors`
+`show diagnostic internal port_lb trace`
+`show diagnostic internal port_lb mem-stats detail`
+`show diagnostic internal port_lb msgs`
+`show diagnostic internal port_lb PortLoopback module all history`
+`show diagnostic internal port_lb RewriteEngineLoopback module all history`
+`show diagnostic internal port_lb PortLoopback module all fsm`
+`show diagnostic internal port_lb RewriteEngineLoopback module all fsm`
+`show diagnostic internal diagmgr module all history`
+`show diagnostic internal diagclient module all history`
+`show diagnostic internal port_lb module all history`
+`show diagnostic internal device_test module all history`
+`show diagnostic internal diagclient errors`
+`show diagnostic internal diagclient mem-stats detail`
+`show diagnostic internal diagclient msgs`
+`show diagnostic internal device_test errors`
+`show diagnostic internal device_test mem-stats detail`
+`show diagnostic internal device_test msgs`
+`show mac address-table count`
+`show mac address-table notification mac-move`
+`show system internal l2fm info summary`
+`show system internal l2fm info detail`
+`show system internal l2fm event-history errors`
+`show system internal l2fm event-history msgs`
+`show system internal l2fm l2dbg macdb`
+`show port-profile brief`
+`show cfs peers`
+`show cfs status`
+`show cfs internal ip database`
+`show cfs internal ethernet-peer database`
+`show cfs internal ethernet-peer statistics`
+`show system internal pktmgr client 202`
+`show cfs internal event-history init transmission`
+`show cfs internal event-history msgs`
+`show cfs internal event-history errors`
+`show cfs internal event-history init`
+`show ip mroute vrf all`
+`show routing ip multicast clients`
+`show routing ip multicast internal rpf-tree vrf all`
+`show routing ip multicast internal mfdm vrf all`
+`show routing ip multicast internal bitfield`
+`show routing ip multicast internal client-buffers`
+`show routing ip multicast internal route-buffers`
+`show routing ip multicast internal txlist vrf all`
+`show ip multicast vrf all`
+`show system internal sysmgr service name mrib`
+`show system internal feature-mgr feature state | include mrib`
+`show routing ip multicast internal mem-stats all`
+`show system internal sysmgr service name mcastfwd`
+`show debug ip mfwd packet`
+`show system internal mfwd`
+`show system internal mfwd ip mroute`
+`show system internal mfwd errors`
+`show system internal mfwd mem-stats all detail`
+`show system internal mfwd ip vrf all`
+`show system internal mfwd library-info`
+`show system internal mfwd l2 mroute txlist`
+`show system internal mfwd l2 mroute buffers`
+`show system internal mfwd l2 mroute detail`
+`show system internal mfwd l2 vlan brief`
+`show system internal mfwd l2 mac detail`
+`show system internal mfwd event-history statistics`
+`show system internal mfwd ip mrib-txlist`
+`show system internal mfwd ip mrib-buffers`
+`show logging level dhcp_snoop`
+`show ip dhcp snooping`
+`show ip dhcp snooping binding`
+`show ip dhcp global statistics`
+`show ip dhcp snooping statistics`
+`show ip dhcp relay statistics`
+`show ip dhcp relay`
+`show ip dhcp relay address`
+ -------------    -------------     --------`show ip arp inspection`
+`show ip arp inspection log`
+`show ip arp inspection statistics`
+`show ip arp inspection interfaces`
+`show ip verify source`
+`show ipv6 dhcp relay`
+-------------------------------------------------------`show ipv6 dhcp relay statistics`
+`show system internal dhcp database global config`
+`show system internal dhcp database interface config`
+`show system internal dhcp database interface context`
+`show system internal dhcp database interface layer3 config`
+`show system internal dhcp database policy all`
+`show system internal dhcp database relay bindings`
+`show system internal dhcp database vlan config`
+`show system internal dhcp database vlan context`
+`show system internal dhcp event-history mts-msgs`
+`show system internal dhcp event-history errors`
+`show system internal dhcp mem-stats detail`
+`show system internal access-list ipsg-stats`
+`show system internal access-list globals`
+`show system internal access-list input entries detail`
+`show system internal sal errors`
+`show system internal sal event-history errors`
+`show system internal sal event-history msgs`
+`show system internal sal info database vlan`
+`show system internal sal info database vrf`
+`show system internal sal info global`
+`show system internal sal mem-stats detail`
+`show system internal sal mem-stats sal-only`
+`show system internal sal mem-stats sal-only detail`
+`show system internal sal msgs`
+`show system internal interface-vlan info`
+`show system internal interface-vlan auto-excluded ports`
+`show system internal interface-vlan port-state`
+`show system internal interface-vlan event-history errors`
+`show system internal interface-vlan event-history traces`
+Wed Jun  2 13:21:17.53080 2021 svi_db.c:631 Invoked svi_db_lock_initialize()`show system internal interface-vlan event-history events`
+`show system internal interface-vlan mem-stats detail`
+`show vlan`
+`show vlan all-ports`
+`show vlan internal info`
+`show vlan internal bd-info bd-usage`
+`show vlan internal bd-info vlan-to-bd all`
+`show vlan internal event-history traces`
+`show vlan internal event-history errors`
+`show vlan internal event-history msgs`
+`show vlan internal mem-stats detail`
+`show system internal sysmgr service name vlan_mgr`
+`show copp status`
+`show system internal copp event-history errors`
+`show system internal copp event-history logs`
+`show system internal copp event-history msgs`
+`show system internal copp info`
+`show system internal copp mem-stats detail`
+`show system internal copp ppf-database policy all`
+`show routing clients`
+`show routing internal event-history add-route filter vrf all`
+`show routing internal event-history delete-route filter vrf all`
+`show routing internal event-history detail`
+`show routing internal event-history errors filter vrf all`
+`show routing internal event-history general filter vrf all`
+`show routing internal event-history loop-detection filter vrf all`
+`show routing internal event-history modify-route filter vrf all`
+`show routing internal event-history msgs`
+`show routing internal event-history notifications filter vrf all`
+`show routing internal event-history recursive-next-hop filter vrf all`
+`show routing internal event-history statistics`
+`show routing internal event-history summary filter vrf all`
+`show routing internal event-history ufdm filter vrf all`
+`show routing internal mem-stats all detail`
+`show system internal oim event-history error`
+`show system internal oim event-history msgs`
+`show system internal oim event-history pss`
+`show system internal oim event-history trace`
+ `show clock`
+`show version`
+`show hardware internal version`
+`show system internal sysmgr state`
+`show system internal sysmgr service all`
+`show system internal mts memory`
+`show system internal cardclient cb`
+`show system internal cardclient logs`
+`show system internal cardclient lcsm`
+`show system internal cardclient lcsm_cb`
+`show system internal cardclient msgs`
+`show system internal crdcfg cb`
+`show system internal crdcfg events`
+`show system internal crdcfg msgs`
+`show system internal crdcfg logs`
+`show system internal crdcfg cards`
+`show system internal kernel aipc`
+`show system internal kernel aipc-mcast`
+`show system internal kernel meminfo`
+`show system internal kernel messages`
+`show system internal mts buffers`
+`show system internal mts buffers summary`
+`show system internal mts buffers details`
+`show hardware internal statistics pktflow all`
+`show hardware internal statistics pktflow rates`
+`show system internal port-client event-history port all`
+`show system internal port-client event-history gold all`
+`show system internal port-client event-history errors`
+`show system internal port-client event-history msgs`
+`show logging onboard boot-uptime`
+`show logging onboard card-boot-history`
+`show logging onboard card-first-power-on`
+`show logging onboard counter-stats`
+`show logging onboard cpu-hog`
+`show logging onboard credit-loss`
+`show logging onboard device-version`
+`show logging onboard environmental-history`
+`show logging onboard error-stats`
+`show logging onboard exception-log`
+`show logging onboard internal cardcl`
+`show logging onboard internal crdcfg`
+`show logging onboard internal kernel`
+`show logging onboard internal mac`
+`show logging onboard internal nsausd`
+`show logging onboard internal online-diag`
+`show logging onboard internal platform`
+`show logging onboard internal phy`
+`show logging onboard internal qengine`
+`show logging onboard internal reset-reason`
+`show logging onboard internal statsclient`
+`show logging onboard internal sysmgr-lc`
+`show logging onboard interrupt-stats`
+`show logging onboard mem-leak`
+`show logging onboard miscellaneous-error`
+`show logging onboard obfl-history`
+`show logging onboard register-log`
+`show logging onboard request-timeout`
+`show logging onboard stack-trace`
+`show logging onboard timeout-drops`
+`show system internal aipc event-history msgs`
+`show system internal aipc event-history errors`
+`show system internal usd errors`
+`show system internal xbar-client event-history errors `
+`show system internal xbar-client event-history msgs `
+`show system internal xbar-client event-history trace `
+`show logging onboard internal xbar `
+`show system internal pixmc errors`
+`show system internal pixmc info txn-log-buffer`
+`show system internal pixmc info global`
+`show system internal pixmc event-history last_txns`
+`show system internal pixmc event-history last_errors`
+`show system internal pixmc mem-stats detail`
+`show system internal pixmc event-history msgs`
+`show system internal pixmc event-history msgs`
+`show hardware internal phy all`
+`show hardware internal mac all`
+`show forwarding internal errors`
+`show forwarding internal error counts`
+`show forwarding internal multicast counts`
+`show system internal l2mcast info statistics`
+`show event manager internal evmc debug counters`
+`show event manager internal evmc mem-stats detail`
+`show event manager internal evmc errors`
+`show event manager internal evmc msgs`
+`show system internal mtm errors`
+`show system internal mtm debugs`
+`show system internal mtm info all`
+`show system internal mtm info taskqueues all`
+`show system internal mtm mem-stats detail`
+`show hardware mac address-table`
+`show mac address-table count`
+`show system internal mtm mac address-table`
+`show system internal mtm l2dbg macdb`
+`show system internal mtm l2dbg portdb`
