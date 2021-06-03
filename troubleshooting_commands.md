@@ -6,6 +6,7 @@
 - `show logg log`
 - `show logg nvram`
 - `show tech`
+- `show tech details`
 
 ----
 ## Layer 2
@@ -67,4 +68,5 @@
 ## Miscellaneous
 - `sh hardware capacity forwarding | b TCAM`
 - `show accounting log`
+- `show processes cpu history `
 
