@@ -1,3 +1,7 @@
+# show tech details - Show commands
+
+`show tech details`
+
 `show switchname`
 `show interface hardware-mappings`
 `show interface mgmt0`
