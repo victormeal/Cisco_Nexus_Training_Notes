@@ -9,6 +9,10 @@
 - `show tech details`
 
 ----
+## Layer 1
+### Hardware
+- `show enviroment`
+----
 ## Layer 2
 
 ### L2 Connectivity
