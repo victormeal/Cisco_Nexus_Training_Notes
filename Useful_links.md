@@ -102,3 +102,12 @@ https://techzone.cisco.com/t5/NX-OS-Memory-Crash/Wireshark-Capture-and-Display-F
 https://cway.cisco.com/sncheck/
 https://scripts.cisco.com/app/tfl_notepad/#
 
+- hay veces que el cliente no puede insalar su nexus en el rack, por falta de piezas, nosotros se las podemos mandar, solo hay que uscar cual usan
+  - https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/hw/n93180yc-fx3s-hig/cisco-nexus-93180yc-fx3s-nx-os-mode-switch-hardware-installation-guide/m_installing-the-switch-chassis-new-1ru-rack-mount.html#id_78739
+You can install the switch using the following rack-mount options:
+
+Rack-mount kit (NXK-ACC-KIT-1RU) which you can order from Cisco. This option offers you easy installation, greater stability, increased weight capacity, added accessibility, and improved removability with front and rear removal.
+
+Rack-mount kit (N3K-C3064-ACC-KIT) which you can order from Cisco.
+
+The rack or cabinet that you use must meet the requirements listed the in General Requirements for Cabinets and Racks section.
