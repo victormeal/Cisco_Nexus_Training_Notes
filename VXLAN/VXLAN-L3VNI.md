@@ -1,7 +1,12 @@
 # VXLAN
-# VXLAN
+----
 
-## SPINE
+## L2VNI only - Config
+
+----
+## L2VNI and L3 VNI Config
+
+### SPINE
 ```
 version 9.3(7) Bios:version 05.43 
 hostname SPINE
@@ -74,7 +79,7 @@ router bgp 64520
     inherit peer VXLAN_LEAF
 ```
 ----
-## LEAF1
+### LEAF1
 ```
 version 9.3(7) Bios:version 01.03 
 hostname Leaf1
@@ -195,7 +200,7 @@ evpn
     route-target export auto
 ```
 ----
-## LEAF2
+### LEAF2
 ```
 version 9.3(7) Bios:version 01.03 
 hostname Leaf2
@@ -338,7 +343,7 @@ interface Ethernet1/44
 
 ```
 ----
-## HOST2 (vlan 10)
+### HOST2 (vlan 10)
 ```
 hostname Host2
 
@@ -350,7 +355,7 @@ interface Ethernet1/46
   no shutdown
 ```
 ----
-## HOST3 (vlan 20)
+### HOST3 (vlan 20)
 ```
 hostname Host3
 
