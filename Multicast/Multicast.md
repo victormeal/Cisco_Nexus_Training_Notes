@@ -14,6 +14,7 @@
 - Si unicast esta roto, multicast esta roto. Pero puede estar bien unicast pero mal multicast.
 - limitaciones en RACL, (por ejemplo no bloquea trafico, pero PACL si)
 - en VPC solo un nexus hace forwarding hacia el receiber. En ambos veremos el S,G pero uno no tenra interfaz en el OIL y el otro si.
+- En la config guide de pim esta escrito que no se sportan pim adyacencies over vpc vlans
 ----
 ## Multicast Theroy
 - Multicast group -> Class D Address Range (224.0. 0.0 – 239.255. 255.255)
