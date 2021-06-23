@@ -114,3 +114,6 @@ The rack or cabinet that you use must meet the requirements listed the in Genera
 
 - Routing Data Management Tool
  - https://gtcroutingops.cloudapps.cisco.com/RDMT/
+
+- pa entender mejor DHCP relay
+- https://www.netmanias.com/en/post/techdocs/6000/dhcp-network-protocol/understanding-dhcp-relay-agents
