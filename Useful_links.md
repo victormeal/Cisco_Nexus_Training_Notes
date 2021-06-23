@@ -111,3 +111,6 @@ Rack-mount kit (NXK-ACC-KIT-1RU) which you can order from Cisco. This option off
 Rack-mount kit (N3K-C3064-ACC-KIT) which you can order from Cisco.
 
 The rack or cabinet that you use must meet the requirements listed the in General Requirements for Cabinets and Racks section.
+
+- Routing Data Management Tool
+ - https://gtcroutingops.cloudapps.cisco.com/RDMT/
