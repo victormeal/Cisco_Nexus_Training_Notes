@@ -117,3 +117,6 @@ The rack or cabinet that you use must meet the requirements listed the in Genera
 
 - pa entender mejor DHCP relay
 - https://www.netmanias.com/en/post/techdocs/6000/dhcp-network-protocol/understanding-dhcp-relay-agents
+
+- hay veces que los bots no revisan bien los archivos como para detectar bugs y asi, pues aqui pueden meter los archivos y les va a decir que bugs le estan pegando en su nexus
+- https://cway.cisco.com/cli/
