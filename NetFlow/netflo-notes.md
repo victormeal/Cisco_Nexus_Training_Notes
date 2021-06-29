@@ -1,5 +1,7 @@
 # NetFlow
 
+https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/7-x/system_management/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_System_Management_Configuration_Guide_7x/b_Cisco_Nexus_9000_Series_NX-OS_System_Management_Configuration_Guide_7x_chapter_011100.html
+
 - Network monitoring
 - ingress ip packets
 - keys -> flow record -> flow
