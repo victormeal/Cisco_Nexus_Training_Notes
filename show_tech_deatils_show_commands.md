@@ -1,5 +1,7 @@
 # show tech details - Show commands
 
+```
+
 `show tech details`
 
 `show switchname`
@@ -2252,3 +2254,5 @@ Wed Jun  2 13:21:17.53080 2021 svi_db.c:631 Invoked svi_db_lock_initialize()`sho
 `show nia nxsdk event-history errors`
 `show nia nxsdk event-history internal libnxsdk`
 `show nia nxsdk internal pss`
+
+```
