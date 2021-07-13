@@ -120,3 +120,6 @@ The rack or cabinet that you use must meet the requirements listed the in Genera
 
 - hay veces que los bots no revisan bien los archivos como para detectar bugs y asi, pues aqui pueden meter los archivos y les va a decir que bugs le estan pegando en su nexus
 - https://cway.cisco.com/cli/
+
+- Nexus Hardware codenames
+- https://wiki.cisco.com/display/NEXUS9K/Hardware+codenames
