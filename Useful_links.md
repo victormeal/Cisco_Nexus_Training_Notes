@@ -32,6 +32,8 @@ admin
 cisco!123
 dcrs-ftp.cisco.com
 
+server con las imagenes 172.18.121.75 admin/cisco!123
+
 - Las notas de los caso que hablamos en cada case review estan aqui
 https://cisco.sharepoint.com/sites/dcrs-mx/SitePages/Case-Review-Minutes.aspx?Mode=Edit
 
