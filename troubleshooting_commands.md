@@ -14,6 +14,10 @@
 - `show enviroment`
 - `show inventory`
 - `show module`
+- `show hardware profile status`
+
+### Layer 1 Connectivity
+- `show int eth 1/12 counters errors`
 ----
 ## Layer 2
 
@@ -46,7 +50,10 @@
 ### L3 Connectivity
 - `show ip int bri`
 - `show ip route vrf all`
+- `show ip route summary vrf all`
 - `show ip route x.x.x.x`
+- `test consistency-checker forwarding`
+- `show consistency-checker forwarding `
 
 ### Routing Protocols
 #### OSPF
@@ -61,8 +68,9 @@
 #### BGP
 - `show run bgp`
 - `show bgp all`
-- `Show ip bgp summary`
-- `show ip bgp neighbors`
+- `Show bgp vrf all all summary`
+- `show bgp vrf all all neighbors`
+- `show bgp sessions vrf all`
 
 ----
 ## IP Services
