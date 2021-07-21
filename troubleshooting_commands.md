@@ -89,6 +89,15 @@
 - `show hsrp`
 - `show hsrp summary`
 - `show hsro all details`
+
+### Prefix-list
+- `show ip prefix-list`
+
+### Route-map
+- `show run | sec route-map`
+- `show route-map`
+- `show route-map WORD`
+
 ----
 ## Miscellaneous
 - `sh hardware capacity forwarding | b TCAM`
