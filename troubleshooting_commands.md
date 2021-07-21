@@ -28,21 +28,27 @@
 - `show cdp neighbors`
 - `show cdp neighbors interface port-channel X`
 
-### VLANs
+### VLANs and Trunks
+- `show vlan`
 - `show vlan bri`
+- `show interface trunk`
+- `show interface trunk vlan 1`
 
 ### Port-channels
 - `sh port-channel summary`
 
 ### Spanning-tree (STP)
-- `sh spanning-tree brief`
-- `sh spanning-tree summary `
+- `show spanning-tree`
+- `show spanning-tree brief`
+- `show spanning-tree summary`
+- `show spanning-tree vlan 1` 
 
 ### VPC
 - `show run vpc`
 - `show vpc`
 - `show vpc consistency global`
 - `sh port-channel summary`
+
 ----
 ## L2/3
 - `show ip arp detail`
