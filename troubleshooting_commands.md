@@ -12,6 +12,8 @@
 ## Layer 1
 ### Hardware
 - `show enviroment`
+- `show inventory`
+- `show module`
 ----
 ## Layer 2
 
@@ -31,7 +33,9 @@
 - `sh spanning-tree summary `
 
 ### VPC
+- `show run vpc`
 - `show vpc`
+- `show vpc consistency global`
 - `sh port-channel summary`
 ----
 ## L2/3
@@ -44,22 +48,24 @@
 - `show ip route vrf all`
 - `show ip route x.x.x.x`
 
-
-
-### OSPF
+### Routing Protocols
+#### OSPF
 - `show ospf`
 - `show ospfv3`
 - `show ip protocols`
 
-### EIGRP
+#### EIGRP
 - `show ip eigrp topology x.x.x.x`
 - `show ip protocols`
 
-### BGP
+#### BGP
+- `show run bgp`
+- `show bgp all`
 - `Show ip bgp summary`
 - `show ip bgp neighbors`
-- 
 
+----
+## IP Services
 ### Multicast
 - `show run pim`
 - `show ip pim neighbor`
@@ -68,6 +74,11 @@
 - `sh ip igmp snooping vlan 2`
 - `sh ip pim internal vpc rpf-source `
 - `show ip pim interface vlan 2 | i i DR`
+
+### HSRP
+- `show hsrp`
+- `show hsrp summary`
+- `show hsro all details`
 ----
 ## Miscellaneous
 - `sh hardware capacity forwarding | b TCAM`
