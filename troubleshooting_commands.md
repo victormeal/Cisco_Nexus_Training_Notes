@@ -7,6 +7,8 @@
 - `show logg nvram`
 - `show tech`
 - `show tech details`
+- `show feature | i i enable`
+- `sh run | i i feature`
 
 ----
 ## Layer 1
