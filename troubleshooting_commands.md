@@ -125,3 +125,74 @@
 - `show processes cpu history `
 - `show switching-mode `
 
+----
+## Packet Capture
+### ELAM WRAPER
+```
+debug platform internal tah elam
+trigger init
+reset
+set outer ipv4 dst_ip 172.29.88.251 src_ip 10.93.46.151
+start
+report
+```
+```
+sh hardware internal tah niv_idx 0x605
+```
+```
+PLNSWCS933601(TAH-elam-insel6)# report
+HEAVENLY ELAM REPORT SUMMARY
+slot - 1, asic - 0, slice - 0
+============================
+
+Incoming Interface: Eth1/31
+Src Idx : 0x605, Src BD : 3101
+Outgoing Interface Info: dmod 1, dpid 36
+Dst Idx : 0x609, Dst BD : 4003
+
+Packet Type: IPv4
+
+Dst MAC address: A0:3D:6E:4F:F3:47
+Src MAC address: 70:7D:B9:00:E1:3F
+.1q Tag0 VLAN: 3101,  cos = 0x0
+
+Dst IPv4 address: 172.29.88.251
+Src IPv4 address: 10.93.46.151
+Ver     =  4, DSCP    =    0, Don't Fragment = 0
+Proto   =  1, TTL     =    7, More Fragments = 0
+Hdr len = 20, Pkt len =   92, Checksum       = 0x568d
+
+L4 Protocol  : 1
+ICMP type    : 8
+ICMP code    : 0
+
+Drop Info:
+----------
+
+LUA:
+LUB:
+LUC:
+LUD:
+Final Drops:
+
+vntag:
+vntag_valid    : 0
+vntag_vir      : 0
+vntag_svif     : 0
+
+ELAM not triggered yet on slot - 1, asic - 0, slice - 1
+
+PLNSWCS933601(TAH-elam-insel6)#
+
+
+
+
+PLNSWCS933601(config)# sh hardware internal tah niv_idx 0x605
+niv_idx  : 1541
+Interface: Ethernet1/31
+PLNSWCS933601(config)# sh hardware internal tah niv_idx 0x609
+niv_idx  : 1545
+Interface: Ethernet1/28
+PLNSWCS933601(config)#
+```
+
