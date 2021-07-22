@@ -17,9 +17,16 @@
 - `show inventory`
 - `show module`
 - `show hardware profile status`
+- `show interface e1/1 capabilities`
 
 ### Layer 1 Connectivity
+- `show int e1/1`
+- `show int e1/1 tramsceiver detail`
+
+### Interface errors
+- `show interface counters errors `
 - `show int eth 1/12 counters errors`
+
 ----
 ## Layer 2
 
@@ -109,4 +116,5 @@
 - `sh hardware capacity forwarding | b TCAM`
 - `show accounting log`
 - `show processes cpu history `
+- `show switching-mode `
 
