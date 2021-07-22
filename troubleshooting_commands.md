@@ -34,6 +34,8 @@
 - `show int status`
 - `show cdp neighbors`
 - `show cdp neighbors interface port-channel X`
+- `show mac address-table`
+- `show hardware mac address-table 1 dynamic`
 
 ### VLANs and Trunks
 - `show vlan`
