@@ -101,7 +101,14 @@
 ### HSRP
 - `show hsrp`
 - `show hsrp summary`
+- `show ip dhcp statistics`
 - `show hsro all details`
+
+### DHCP
+- `Show ip dhcp statistics`
+
+### COPP
+- `show policy-map interface control-plane`
 
 ### Prefix-list
 - `show ip prefix-list`
