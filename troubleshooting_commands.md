@@ -40,6 +40,7 @@
 ### VLANs and Trunks
 - `show vlan`
 - `show vlan bri`
+- `show vlan id 1`
 - `show interface trunk`
 - `show interface trunk vlan 1`
 
