@@ -27,6 +27,11 @@
 - `show interface counters errors `
 - `show int eth 1/12 counters errors`
 
+### FEX
+- `show fex`
+- `show fex detail`
+- `show interface port-channel 103 fex-intf`
+
 ----
 ## Layer 2
 
@@ -46,6 +51,7 @@
 
 ### Port-channels
 - `sh port-channel summary`
+- `show run interface port-channel 103 membership`
 
 ### Spanning-tree (STP)
 - `show spanning-tree`
