@@ -42,4 +42,13 @@ sh sytem internal mts buffers summary
 sh system mts sup sap 284 description
 sh sytem internal mts buffers details
 ```
+``
+fex 101
+description desc
+
+``
 e101/1/x -> asi se veria la interface en el nexus
+
+```
+show interface port-channel 4 fex-intf
+```
