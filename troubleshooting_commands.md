@@ -183,6 +183,7 @@
 ### SFLOW
 ### Statistics
 ### SPAN
+- `show hardware rate-limiter span` 
 ### VACL
 ### Telemetry
 ----
