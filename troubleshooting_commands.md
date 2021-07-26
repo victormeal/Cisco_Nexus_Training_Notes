@@ -142,6 +142,7 @@
 ### PBR
 ### FHRP - HSRP
 - `show hsrp`
+- `show hsrp brief`
 - `show hsrp summary`
 - `show ip dhcp statistics`
 - `show hsro all details`
