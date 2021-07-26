@@ -1,41 +1,24 @@
 # Cisco Nexus - Troubleshooting Commands
-----
-##DME Inconsistency
-### DME Issues
-----
-
-## Security
-### RADIUS
-### TACAS
-### CTS
-### MACsec
-### Access lists
-### User accounts/permissions
-### storm control
-----
-
-## System Management
-### TCAM Carving
-### VDC
-### Forwarding Mode/template
-### CoPP
-### Hardware Rate Limiters
-### Warp Mode
-### NX-OS/upgrade/Downgrade
-### Rollback/Checkpoint
-### Config Sync/Switch Profile
-### Generic System Management
-### Proactive
-### Health Check
-### Device Unresponsive
-### Unexpected Reboot
-### Password Recovery
-### Bootflash Issues
-### Process Crash/Core
-### Memory Leak
-----
-## Licensing
-### Licensing
+## Contents
+- Hardware
+- Hardware Forwarding
+- L1
+- FEX
+- Performance Issues
+- L2 Protocols
+- L3 Unicast Protocols
+- Multicast
+- VXLAN
+- MPLS
+- QoS
+- Management
+- Monitoring
+- Security
+- System Management
+- Licensing
+- FC/FCoE
+- Automation/Programmability
+- DME Inconsistency
 ----
 ## Hardware
 ### Sup engines
@@ -46,6 +29,28 @@
 ### System Controller
 ### Transceivers
 ### PSU/Fan Trays
+----
+## Hardware Forwarding
+### L3 mis-programming
+### L2 mis-programming
+### MAC address sync
+----
+## L1
+### Ports Flapping
+### Ports not coming up
+### Auto negotiation
+### Interface/Port Errors
+### POE
+----
+## FEX
+### FEX
+----
+## Performance Issues
+### Packet Drops
+### Oversubscription
+### High CPU
+### Software Switching
+### MTU
 ----
 ## L2 Protocols
 ### Rapid STP
@@ -75,29 +80,22 @@
 ### RIP
 ### Tunnels GRE/IPIP/etc
 ----
-## MPLS
----
-## VXLAN
-----
-## Performance Issues
-### Packet Drops
-### Oversubscription
-### High CPU
-### Software Switching
-### MTU
-----
-## QoS
-### L3 QoS
-### L2 QoS
-----
 ## Multicast
 ### IGMP
 ### PIM Sparse
 ### PIM Bidir
 ----
-## FC/FCoE
+## VXLAN
 ----
-## Automation/Programmability
+## MPLS
+----
+## QoS
+### L3 QoS
+### L2 QoS
+----
+## Management
+### NTP
+### PTP
 ----
 ## Monitoring
 ### SNMP
@@ -110,24 +108,42 @@
 ### VACL
 ### Telemetry
 ----
-## Hardware Forwarding
-### L3 mis-programming
-### L2 mis-programming
-### MAC address sync
+## Security
+### RADIUS
+### TACAS
+### CTS
+### MACsec
+### Access lists
+### User accounts/permissions
+### storm control
 ----
-## FEX
-### FEX
+## System Management
+### TCAM Carving
+### VDC
+### Forwarding Mode/template
+### CoPP
+### Hardware Rate Limiters
+### Warp Mode
+### NX-OS/upgrade/Downgrade
+### Rollback/Checkpoint
+### Config Sync/Switch Profile
+### Generic System Management
+### Proactive
+### Health Check
+### Device Unresponsive
+### Unexpected Reboot
+### Password Recovery
+### Bootflash Issues
+### Process Crash/Core
+### Memory Leak
 ----
-## L1
-### Ports Flapping
-### Ports not coming up
-### Auto negotiation
-### Interface/Port Errors
-### POE
+## Licensing
+### Licensing
 ----
-## Management
-### NTP
-### PTP
+## FC/FCoE
 ----
-
+## Automation/Programmability
+----
+## DME Inconsistency
+----
 
