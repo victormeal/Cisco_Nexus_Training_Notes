@@ -42,6 +42,16 @@ ethanalyzer local interface inband mirror display-filter icmp limit-captured-fra
 ```
 no olvidar apagar o quietar el monitor session creado
 no veremos el trafico creado de ese nexus, no es siempre
+https://techzone.cisco.com/t5/Nexus-9300/Nexus-9000-Cloud-Scale-ASIC-NX-OS-SPAN-to-CPU-Procedure/ta-p/1449262
+
+50 kbps Default Hardware Rate Limiter
+ 
+
+By default, Cisco Nexus 9000 series switches limit the rate of traffic replicated to the control plane through a SPAN-to-CPU monitor session to 50 kbps. This rate limiting is performed at the Cloud Scale ASIC/forwarding engine and is a self-protection mechanism to ensure the control plane of the device is not overwhelmed with replicated traffic.
+```
+show hardware rate-limiter span 
+hardware rate-limiter span 250 
+```
 
 ----
 
