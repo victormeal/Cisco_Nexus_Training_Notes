@@ -1,237 +1,140 @@
-# Cisco Nexus - Troubleshooting Commands
-## Contents
-- Basic Commands
-- Hardware
-- Hardware Forwarding
-- L1
-- FEX
-- Performance Issues
-- L2 Protocols
-- L3 Unicast Protocols
-- Multicast
-- VXLAN
-- MPLS
-- QoS
-- Management
-- Monitoring
-- Security
-- System Management
-- Licensing
-- FC/FCoE
-- Automation/Programmability
-- DME Inconsistency
-- Miscellaneous
-- Packet Capture
+# Troubleshooting Commands
+## Basic Cammands
+- `show version`
+- `show module`
+- `show run`
+- `show logg log`
+- `show logg nvram`
+- `show tech`
+- `show tech details`
+- `show feature | i i enable`
+- `sh run | i i feature`
 
 ----
-## Basic Commands
-----
-## Hardware
+## Layer 1
+### Hardware
 - `show enviroment`
 - `show inventory`
 - `show module`
 - `show hardware profile status`
 - `show interface e1/1 capabilities`
-### Sup engines
-### Linecards
-### Chassis (TOR)
-### Chassis (EOR)
-### Fabirc Modules
-### System Controller
-### Transceivers
-- `show int e1/1 transceiver detail`
-### PSU/Fan Trays
-----
-## Hardware Forwarding
-### L3 mis-programming
-### L2 mis-programming
-### MAC address sync
-----
-## L1
-### Ports Flapping
+
+### Layer 1 Connectivity
 - `show int e1/1`
-- `show int e1/1 transceiver detail`
-### Ports not coming up
-### Auto negotiation
-### Interface/Port Errors
+- `show int e1/1 tramsceiver detail`
+
+### Interface errors
 - `show interface counters errors `
 - `show int eth 1/12 counters errors`
-### POE
-----
-## FEX
+
 ### FEX
 - `show fex`
 - `show fex detail`
 - `show interface port-channel 103 fex-intf`
+
 ----
-## Performance Issues
-### Packet Drops
-### Oversubscription
-### High CPU
-### Software Switching
-### MTU
-----
-## L2 Protocols
+## Layer 2
+
+### L2 Connectivity
 - `show int status`
 - `show cdp neighbors`
 - `show cdp neighbors interface port-channel X`
 - `show mac address-table`
 - `show hardware mac address-table 1 dynamic`
-- `show ip arp detail`
-- `show ip arp detail | include x.x.x.x`
-### Rapid STP
-- `show spanning-tree`
-- `show spanning-tree brief`
-- `show spanning-tree summary`
-- `show spanning-tree vlan 1` 
-### MST
+
 ### VLANs and Trunks
 - `show vlan`
 - `show vlan bri`
 - `show vlan id 1`
 - `show interface trunk`
 - `show interface trunk vlan 1`
+
 ### Port-channels
 - `sh port-channel summary`
 - `show run interface port-channel 103 membership`
+
+### Spanning-tree (STP)
+- `show spanning-tree`
+- `show spanning-tree brief`
+- `show spanning-tree summary`
+- `show spanning-tree vlan 1` 
+
 ### VPC
 - `show run vpc`
 - `show vpc`
 - `show vpc consistency global`
 - `sh port-channel summary`
-### Fabricpath
-### VTP
-### Private VLANs
-### Dot1q/QinQ Tunnels
-### LACP
-### UDLD
+
 ----
-## L3 Unicast Protocols
+## L2/3
+- `show ip arp detail`
+- `show ip arp detail | include x.x.x.x`
+----
+## Layer 3
+### L3 Connectivity
 - `show ip int bri`
 - `show ip route vrf all`
 - `show ip route summary vrf all`
 - `show ip route x.x.x.x`
 - `test consistency-checker forwarding`
 - `show consistency-checker forwarding `
-### Static Routing
-### Prefix-list
-- `show ip prefix-list`
-### Route-map
-- `show run | sec route-map`
-- `show route-map`
-- `show route-map WORD`
-### Redistribution
-### Route Leaking
-### OSPF
+
+### Routing Protocols
+#### OSPF
 - `show ospf`
 - `show ospfv3`
 - `show ip protocols`
-### EIGRP
+
+#### EIGRP
 - `show ip eigrp topology x.x.x.x`
 - `show ip protocols`
-### ISIS
-### BGP
+
+#### BGP
 - `show run bgp`
 - `show bgp all`
 - `Show bgp vrf all all summary`
 - `show bgp vrf all all neighbors`
 - `show bgp sessions vrf all`
-### DHCP
-- `Show ip dhcp statistics`
-### BFD
-### PBR
-### FHRP - HSRP
-- `show hsrp`
-- `show hsrp summary`
-- `show ip dhcp statistics`
-- `show hsro all details`
-### FHRP - VRRP
-### VRF
-### NAT
-### RIP
-### Tunnels GRE/IPIP/etc
+
 ----
-## Multicast
-### IGMP
-- `sh ip igmp snooping vlan 2`
-### PIM Sparse
+## IP Services
+### Multicast
 - `show run pim`
 - `show ip pim neighbor`
 - `show ip mroute vrf all`
 - `show ip mroute x.x.x.x`
+- `sh ip igmp snooping vlan 2`
 - `sh ip pim internal vpc rpf-source `
 - `show ip pim interface vlan 2 | i i DR`
-### PIM Bidir
-----
-## VXLAN
-----
-## MPLS
-----
-## QoS
-### L3 QoS
-### L2 QoS
-----
-## Management
-### NTP
-### PTP
-----
-## Monitoring
-### SNMP
-### Netflow
-### RMON
-### Flow Tables
-### SFLOW
-### Statistics
-### SPAN
-### VACL
-### Telemetry
-----
-## Security
-### RADIUS
-### TACAS
-### CTS
-### MACsec
-### Access lists
-### User accounts/permissions
-### storm control
-----
-## System Management
-### TCAM Carving
-### VDC
-### Forwarding Mode/template
-### CoPP
-- `show policy-map interface control-plane`
-### Hardware Rate Limiters
-### Warp Mode
-### NX-OS/upgrade/Downgrade
-### Rollback/Checkpoint
-### Config Sync/Switch Profile
-### Generic System Management
-### Proactive
-### Health Check
-### Device Unresponsive
-### Unexpected Reboot
-### Password Recovery
-### Bootflash Issues
-### Process Crash/Core
-### Memory Leak
-----
-## Licensing
-### Licensing
-----
-## FC/FCoE
-----
-## Automation/Programmability
-----
-## DME Inconsistency
+
+### HSRP
+- `show hsrp`
+- `show hsrp summary`
+- `show ip dhcp statistics`
+- `show hsro all details`
+
+### DHCP
+- `Show ip dhcp statistics`
+
+### COPP
+
+
+### Prefix-list
+- `show ip prefix-list`
+
+### Route-map
+- `show run | sec route-map`
+- `show route-map`
+- `show route-map WORD`
+
 ----
 ## Miscellaneous
 - `sh hardware capacity forwarding | b TCAM`
 - `show accounting log`
 - `show processes cpu history `
 - `show switching-mode `
+
 ----
-## Packet Capture
 ## Packet Capture
 ### ELAM WRAPER
 ```
@@ -301,3 +204,4 @@ niv_idx  : 1545
 Interface: Ethernet1/28
 PLNSWCS933601(config)#
 ```
+
