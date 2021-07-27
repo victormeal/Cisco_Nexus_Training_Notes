@@ -166,6 +166,7 @@
 ### PIM Bidir
 ----
 ## VXLAN
+- `sh nve interface nve 1 detail`
 ----
 ## MPLS
 ----
