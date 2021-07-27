@@ -32,6 +32,7 @@
 - `show module`
 - `show hardware profile status`
 - `show interface e1/1 capabilities`
+- `show environment temperature `
 ### Sup engines
 ### Linecards
 ### Chassis (TOR)
