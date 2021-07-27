@@ -226,6 +226,8 @@
 ## FC/FCoE
 ----
 ## Automation/Programmability
+### EEM
+- `show event manager system-policy`
 ----
 ## DME Inconsistency
 ----
