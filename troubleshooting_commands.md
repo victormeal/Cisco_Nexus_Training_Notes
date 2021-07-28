@@ -228,6 +228,9 @@
 ## Automation/Programmability
 ### EEM
 - `show event manager system-policy`
+- `show event manager environment all`
+- `show event manager event-types all`
+-   
 ----
 ## DME Inconsistency
 ----
