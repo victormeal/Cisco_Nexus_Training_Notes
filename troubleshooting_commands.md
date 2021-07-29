@@ -25,6 +25,11 @@
 
 ----
 ## Basic Commands
+- `show run`
+- `show run all`
+- `show logging log`
+- `show logging level`
+- `show logging level <something>`
 ----
 ## Hardware
 - `show enviroment`
