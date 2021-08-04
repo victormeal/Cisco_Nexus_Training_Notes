@@ -244,6 +244,7 @@
 - `show accounting log`
 - `show processes cpu history `
 - `show switching-mode `
+- `show systemr reset-reason`
 ----
 ## Packet Capture
 ## Packet Capture
