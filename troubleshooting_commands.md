@@ -129,12 +129,18 @@
 ### Redistribution
 ### Route Leaking
 ### OSPF
-- `show ospf`
+- `show ip ospf`
 - `show ospfv3`
 - `show ip protocols`
+- `show ip ospf 1 interface e1/1`
+- `show ip ospf neighbor`
+- `show ip ospf interface`
+- `show ip ospf summary-address`
+- `show ip ospf database`
 ### EIGRP
 - `show ip eigrp topology x.x.x.x`
 - `show ip protocols`
+- `show ip eigrp topology detail-links vrf all`
 ### ISIS
 ### BGP
 - `show run bgp`
