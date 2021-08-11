@@ -219,6 +219,7 @@
 ### Hardware Rate Limiters
 ### Warp Mode
 ### NX-OS/upgrade/Downgrade
+- `show upgrade history `
 ### Rollback/Checkpoint
 ### Config Sync/Switch Profile
 ### Generic System Management
