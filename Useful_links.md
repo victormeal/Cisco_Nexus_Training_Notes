@@ -125,3 +125,6 @@ The rack or cabinet that you use must meet the requirements listed the in Genera
 
 - Nexus Hardware codenames
 - https://wiki.cisco.com/display/NEXUS9K/Hardware+codenames
+
+- transceiver support matrix
+- https://tmgmatrix.cisco.com/?npid=76
