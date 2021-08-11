@@ -69,6 +69,7 @@
 - `show fex`
 - `show fex detail`
 - `show interface port-channel 103 fex-intf`
+- `reload fex <number>`
 ----
 ## Performance Issues
 ### Packet Drops
