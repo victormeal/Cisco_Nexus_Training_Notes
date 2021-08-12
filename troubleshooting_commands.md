@@ -253,6 +253,11 @@
 - `show processes cpu history `
 - `show switching-mode `
 - `show systemr reset-reason`
+```
+attach mod 1
+show hardware internal tah event-history front-port 43
+show hardware internal port-client link event
+```
 ----
 ## Packet Capture
 ## Packet Capture
