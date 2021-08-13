@@ -253,6 +253,10 @@
 - `show processes cpu history `
 - `show switching-mode `
 - `show systemr reset-reason`
+- `show system interal ethpm event-history interface e1/1`
+- `show lacp internal event-history interface e1/1`
+- `show hardware internal buffer pkt-stats`
+
 ```
 attach mod 1
 show hardware internal tah event-history front-port 43
