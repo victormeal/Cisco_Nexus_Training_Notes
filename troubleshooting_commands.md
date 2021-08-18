@@ -101,6 +101,7 @@
 ### Port-channels
 - `sh port-channel summary`
 - `show run interface port-channel 103 membership`
+- `show port-channel load-balance forwarding-path interface port-channel 1 dst-ip 1.1.1.1 src-ip 2.2.2.2 `
 ### VPC
 - `show run vpc`
 - `show vpc`
@@ -332,4 +333,7 @@ PLNSWCS933601(config)# sh hardware internal tah niv_idx 0x609
 niv_idx  : 1545
 Interface: Ethernet1/28
 PLNSWCS933601(config)#
+```
+```
+sh system internal ethpm info all | i i dpid=48  
 ```
