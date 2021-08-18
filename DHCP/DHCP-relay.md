@@ -12,6 +12,10 @@ interface ethernet x/y
 Show ip dhcp relay
 Show ip dhcp relay address
 ```
+```
+ethanalyzer local interface inband display-filter bootp limit-captured-frames 0
+```
+https://www.netmanias.com/en/post/techdocs/6000/dhcp-network-protocol/understanding-dhcp-relay-agents
 ----
 ```
 (optional) ip dhcp snooping vlan vlan-list
