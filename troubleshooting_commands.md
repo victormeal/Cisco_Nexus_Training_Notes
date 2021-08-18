@@ -257,6 +257,7 @@
 - `show system interal ethpm event-history interface e1/1`
 - `show lacp internal event-history interface e1/1`
 - `show hardware internal buffer pkt-stats`
+- `sh system reset-reason `
 
 ```
 attach mod 1
