@@ -58,6 +58,8 @@
 - `show int e1/1`
 - `show int e1/1 transceiver detail`
 ### Ports not coming up
+- `attach mod 1`
+- `show hardware internal tah event-history front-port 1`
 ### Auto negotiation
 ### Interface/Port Errors
 - `show interface counters errors `
