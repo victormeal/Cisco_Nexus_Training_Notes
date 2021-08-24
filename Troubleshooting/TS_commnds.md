@@ -168,3 +168,20 @@ sh hardware internal tah niv_idx 0x605
 ```
 sh system internal ethpm info all | i i dpid=48  
 ```
+## ELAM
+```
+show hardware internal tah interface e1/1
+attach module 1
+debug platform internal tah elam asic <0>
+trigger init asic <> slice <> lu-a2d 1
+reset
+set outer ipv4 dst_ip 172.29.88.251 src_ip 10.93.46.151
+start
+report
+```
+```
+sh hardware internal tah niv_idx 0x605
+```
+```
+sh system internal ethpm info all | i i dpid=48  
+```
