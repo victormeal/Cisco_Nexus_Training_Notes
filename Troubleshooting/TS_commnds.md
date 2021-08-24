@@ -146,6 +146,8 @@
 - `show hardware internal buffer pkt-stats`
 - `sh system reset-reason `
 - `sh system internal mts buffers details`
+- `show system internal mts sup sap <> description`
+- `show system internal mts buffers summary `
 
 ```
 attach mod 1
