@@ -60,6 +60,7 @@
 ### Ports not coming up
 - `attach mod 1`
 - `show hardware internal tah event-history front-port 1`
+- `show hardware internal tah link-events | no-more`
 ### Auto negotiation
 ### Interface/Port Errors
 - `show interface counters errors `
@@ -266,6 +267,7 @@
 attach mod 1
 show hardware internal tah event-history front-port 43
 show hardware internal port-client link event
+show hardware internal tah link-events fp-port 51
 ```
 ----
 ## Packet Capture
