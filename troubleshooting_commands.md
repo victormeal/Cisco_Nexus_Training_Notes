@@ -262,6 +262,7 @@
 - `show lacp internal event-history interface e1/1`
 - `show hardware internal buffer pkt-stats`
 - `sh system reset-reason `
+- `sh system internal mts buffers details`
 
 ```
 attach mod 1
