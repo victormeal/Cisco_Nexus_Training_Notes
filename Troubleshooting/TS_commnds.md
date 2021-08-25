@@ -1,5 +1,7 @@
 # Troubleshooting commands
 
+- `show tech-support details > $(SWITCHNAME)-tech-details`
+
 ## Hardware
 - `show enviroment`
 - `show inventory`
@@ -97,6 +99,8 @@
 - `show ip eigrp topology detail-links vrf all`
 
 ## BGP
+- `show tech-support bgp detailed > $(SWITCHNAME)-tech-BGP`
+- `show tech-support routing ip unicast > $(SWITCHNAME)-tech-routing`
 - `show run bgp`
 - `show ip bgp`
 - `show ip bgp neighbors`
@@ -105,6 +109,9 @@
 - `Show bgp vrf all all summary`
 - `show bgp vrf all all neighbors`
 - `show bgp sessions vrf all`
+
+- `show ip bgp x.x.x.x/x vrf <>`
+- `show ip bgp neighbors x.x.x.x vrf <>`
 
 ## DHCP
 - `Show ip dhcp statistics`
