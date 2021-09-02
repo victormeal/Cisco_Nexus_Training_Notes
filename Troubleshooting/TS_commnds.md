@@ -136,6 +136,11 @@
 
 ## VXLAN
 - `sh nve interface nve 1 detail`
+### Flood n Learn with mutlicast
+- `show ip pim rp`
+- `show ip pim neig`
+- `show nve peers`
+- `show nve vni`
 
 ## EEM
 - `show event manager system-policy`
