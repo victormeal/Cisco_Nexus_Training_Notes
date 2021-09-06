@@ -65,6 +65,26 @@
 - `show interface port-channel 103 fex-intf`
 - `reload fex <number>`
 
+## NTP
+- `show ntp peers`
+- `show ntp peer-status`
+- `show ntp authentication-keys`
+- `show ntp trusted-keys`
+- `show ntp authentication-status`
+
+## N7K - VDC
+- `show vdc`
+- `show vdc detail`
+- `show vdc current-vdc`
+- `show vdc membership`
+- `show vdc resource`
+
+
+- `switchto vdc <name>`
+- `vdc <name>`  <<< vdc config
+
+https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_device_context/configuration/guide/b-7k-Cisco-Nexus-7000-Series-NX-OS-Virtual-Device-Context-Configuration-Guide/managing-vdc.html
+
 ## Prefix-list
 - `show ip prefix-list`
 
