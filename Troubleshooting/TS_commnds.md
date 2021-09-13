@@ -68,6 +68,7 @@
 ## NTP
 - `show ntp peers`
 - `show ntp peer-status`
+- `show ntp statistics peer ipaddr <x.x.x.x>` 
 - `show ntp authentication-keys`
 - `show ntp trusted-keys`
 - `show ntp authentication-status`
