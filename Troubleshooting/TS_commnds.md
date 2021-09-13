@@ -94,6 +94,15 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show route-map`
 - `show route-map WORD`
 
+## CoPP
+- `show copp status`
+- `show policy-map interface control-plane`
+- `show policy-map interface control-plane | i i class|drop`
+- `show policy-map interface control-plane class <>`
+- `show hardware rate-limiter`
+- `sh int e1/1 counters detailed`
+- `clear copp statistics`
+
 ### SPAN
 - `show hardware rate-limiter span` 
 
