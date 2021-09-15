@@ -56,7 +56,7 @@
 ## vPC
 - `show run vpc`
 - `show vpc`
-- `show vpc consistency global`
+- `show vpc consistency-parameters global`
 - `sh port-channel summary`
 
 ## FEX
