@@ -6,7 +6,7 @@ Next, I will describe the process.
 - Step 1: Power cycle the Nexus.
 - Step 2: When the Nexus is starting up press Ctrl-C, I suggest you start pressing these keys as soon as possible to make sure you get it on the first try.
 - Step 3: The prompt should have changed to `loader>`
-- Step 4: Enter the following command: `cmdline recoverymode = 1`
+- Step 4: Enter the following command: `cmdline recoverymode=1`
 - Step 5: With the command `dir` you can see which files are the Nexus bootflash. Identify which image file you want to start the nexus from.
 - Step 6: For example, if your image file is called “nxos.9.3.7.bin”. With the command `boot nxos.9.3.7.bin` the Nexus will boot with that image.
 - Step 7: When the Nexus has finished booting, the prompt will change to `switch (boot)`. Enter configuration mode. `config terminal`
