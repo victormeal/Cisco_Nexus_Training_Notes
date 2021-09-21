@@ -11,3 +11,4 @@ show dbus
 show rbus
 sh system internal pixm info ltl 0x??
 ```
+https://www.cisco.com/c/en/us/support/docs/switches/nexus-7000-series-switches/116647-technote-product-00.html
