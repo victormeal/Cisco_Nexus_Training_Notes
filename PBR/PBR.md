@@ -14,6 +14,12 @@ route-map NAME permit 10
 match ip address 1
 set ip default next-hop y.y.y.y
 ```
+```
+show run rpm
+show system internal rpm clients pbr
+show system internal rpm pbr ip nexthop
+show ip internal pbr status 
+```
 ## config (sh run)
 ```
 switchB# sh run
