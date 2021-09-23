@@ -155,12 +155,16 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 
 ## Multicast
 ### IGMP
+- `show ip igmp groups 239.194.87.10`
+- `show ip igmp interface vlan 305`
 - `sh ip igmp snooping vlan 2`
 ### PIM Sparse
 - `show run pim`
 - `show ip pim neighbor`
 - `show ip mroute vrf all`
 - `show ip mroute x.x.x.x`
+- `show ip pim interface brief`
+- `clear ip igmp groups 239.194.87.10`
 - `sh ip pim internal vpc rpf-source `
 - `show ip pim interface vlan 2 | i i DR`
 
