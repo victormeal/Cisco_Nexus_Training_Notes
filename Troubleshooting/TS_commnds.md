@@ -23,6 +23,13 @@
 - `show interface counters errors `
 
 ### Interfaces and ports flapping
+- `show lacp internal event-history int <module / port number> | no-more`
+- `show system internal ethpm event-history int <module / port number>  | no-more`
+```
+attach mod <>
+show hardware internal tah event-history front-port <port number  | no-more
+show system internal port-client event-history port <port number>  | no-more
+```
 - `attach mod 1`
   - `show hardware internal tah event-history front-port 1`
   - `show hardware internal tah link-events | no-more`
