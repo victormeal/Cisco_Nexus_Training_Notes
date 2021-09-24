@@ -22,7 +22,7 @@
 - `show int eth 1/12 counters errors`
 - `show interface counters errors `
 
-### Interfaces and ports flapping
+## Interfaces and ports flapping
 - `show lacp internal event-history int <module / port number> | no-more`
 - `show system internal ethpm event-history int <module / port number>  | no-more`
 ```
@@ -33,6 +33,15 @@ show system internal port-client event-history port <port number>  | no-more
 - `attach mod 1`
   - `show hardware internal tah event-history front-port 1`
   - `show hardware internal tah link-events | no-more`
+
+## LACP
+```
+show lacp counters interface port-channel 10
+show lacp neighbor interface port-channel 10
+show lacp internal event-history interface e3/1
+show system internal ethpm event-history interface port-channel 10
+show port-channel internal event-history interface port-channel 10
+```
 
 ## L2 Adjacency
 - `show cdp neighbors`
