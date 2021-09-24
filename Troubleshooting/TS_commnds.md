@@ -34,6 +34,12 @@ show system internal port-client event-history port <port number>  | no-more
   - `show hardware internal tah event-history front-port 1`
   - `show hardware internal tah link-events | no-more`
 
+```
+- show tech ethpm
+
+- show tech ethpc
+```
+
 ## LACP
 ```
 show lacp counters interface port-channel 10
