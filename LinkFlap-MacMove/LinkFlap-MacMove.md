@@ -1,4 +1,5 @@
 # Link-Flap
+https://techzone.cisco.com/t5/Hardware/Nexus-3000-Link-Flaps-ETHPM-and-ETHPC-logs/ta-p/865892
 - problemas de capa 1 o de config
 
 - cambiar el cable, puerto,hacer prueba de loop
