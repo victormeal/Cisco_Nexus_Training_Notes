@@ -39,6 +39,7 @@ show system internal port-client event-history port <port number>  | no-more
 
 - show tech ethpc
 ```
+- `show system internal ethpm event-history inter e1/45 | b "Fri Oct 23 12:13:06" | i i "triggered event" prev 2 next 2`
 
 ## LACP
 ```
