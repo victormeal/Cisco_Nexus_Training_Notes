@@ -181,6 +181,7 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show ip igmp groups 239.194.87.10`
 - `show ip igmp interface vlan 305`
 - `sh ip igmp snooping vlan 2`
+- `clear ip igmp groups 239.194.87.10`
 ### PIM Sparse
 - `show run pim`
 - `show ip pim neighbor`
@@ -189,7 +190,6 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show ip pim interface brief`
 - `show ip mroute x.x.x.x summary`
 - `show ip mroute x.x.x.x summary software-forwarded`
-- `clear ip igmp groups 239.194.87.10`
 - `sh ip pim internal vpc rpf-source `
 - `show ip pim interface vlan 2 | i i DR`
 
