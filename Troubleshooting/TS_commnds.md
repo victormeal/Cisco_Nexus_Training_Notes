@@ -65,6 +65,13 @@ show port-channel internal event-history interface port-channel 10
 - `show interface trunk`
 - `show interface trunk vlan 1`
 
+## Private VLANs
+- `show vlan private-vlan`
+- `show interface switchport`
+- `show interface private-vlan mapping`
+- `show interface vlan primary-vlan-id private-vlan mapping`
+- `show vlan counters`
+
 ## Port-channels
 - `sh port-channel summary`
 - `show run interface port-channel 103 membership`
