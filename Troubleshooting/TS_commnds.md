@@ -65,6 +65,13 @@ show port-channel internal event-history interface port-channel 10
 - `show interface trunk`
 - `show interface trunk vlan 1`
 
+#VTP
+- `show vtp status`
+- `clear vtp counters`
+- `show vtp counters`
+- `show vtp interface`
+- `show vtp datafile`
+
 ## Private VLANs
 - `show vlan private-vlan`
 - `show interface switchport`
