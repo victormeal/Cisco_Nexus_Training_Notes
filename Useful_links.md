@@ -128,3 +128,6 @@ The rack or cabinet that you use must meet the requirements listed the in Genera
 
 - transceiver support matrix
 - https://tmgmatrix.cisco.com/?npid=76
+
+- RMA return link
+- https://www.cisco-global-returns.com/rmalogin.do
