@@ -1,4 +1,48 @@
 # SPAN
+----
+````
+Step 1. Configure the destination port, the port where you are going to capture the traffic.
+switch# configure terminal
+switch(config)# interface ethernet <x/x>
+switch(config-if)# switchport
+switch(config-if)# switchport monitor
+switch(config-if)# no shut
+switch(config-if)# exit
+switch(config)#
+````
+````
+Step2 (optional). Filter the traffic that is going to be mirrored on the destination port.
+switch# configure terminal
+switch(config)# ip access-list my_SPAN_ACL
+switch(config-acl)# permit ip 10.64.101.81/32 10.22.19.81/32
+switch(config-acl)# permit ip 10.22.19.81/32 10.64.101.81/32
+switch(config-acl)# permit ip 10.64.100.81/32 10.22.18.81/32
+switch(config-acl)# permit ip 10.22.18.81/32 10.64.100.81/32
+switch(config-acl)# exit
+switch(config)# vlan access-map my_SPAN_filter
+switch(config-access-map)# match ip address my_SPAN_ACL
+switch(config-access-map)# action forward
+switch(config-access-map)# exit
+````
+````
+
+Step 3. Configure the monitor session.
+switch(config)# monitor session 1
+switch(config-monitor)# source interface ethernet ethernet <y/y> rx
+switch(config-monitor)# destination interface ethernet <x/x>
+switch(config-monitor)# filter access_group my_SPAN_filter
+switch(config-monitor)# no shut
+switch(config-monitor)# exit
+````
+````
+Step 4. Verify
+switch# show monitor session 1
+switch# show run monitor
+switch# show ip access-lists my_SPAN_ACL
+switch# show vlan access-map my_SPAN_filter
+````
+----
+
 
 ## SPAN Sources
 	- Ethernet ports
