@@ -22,6 +22,12 @@
 - `show int eth 1/12 counters errors`
 - `show interface counters errors `
 
+## Packet drops
+- `show hardware internal interface asic counters module 1`
+- https://techzone.cisco.com/t5/Nexus-9300/Nexus-9200-931xx-Tahoe-ASIC-Drop-Counters-Description/ta-p/994494
+- `show hardware internal tah buffer counter`
+
+
 ## Interfaces and ports flapping
 - `show lacp internal event-history int <module / port number> | no-more`
 - `show system internal ethpm event-history int <module / port number>  | no-more`
@@ -188,7 +194,7 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show hsrp brief`
 - `show hsrp summary`
 - `show ip dhcp statistics`
-- `show hsro all details`
+- `show hsrp all details`
 
 ## Multicast
 ### IGMP
@@ -202,6 +208,7 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show ip mroute vrf all`
 - `show ip mroute x.x.x.x`
 - `show ip pim interface brief`
+- `show ip pim internal event-history null-register | i 239.4.4.1`
 - `show ip mroute x.x.x.x summary`
 - `show ip mroute x.x.x.x summary software-forwarded`
 - `sh ip pim internal vpc rpf-source `
