@@ -20,10 +20,12 @@
 - `show int e1/1 transceiver detail`
 - `show interface e1/1 capabilities`
 - `show int eth 1/12 counters errors`
+- `clear counters interface e1/22 `
 - `show interface counters errors `
 
 ## Packet drops
 - `show hardware internal interface asic counters module 1`
+- `clear hardware internal interface-all asic counters module 1`
 - https://techzone.cisco.com/t5/Nexus-9300/Nexus-9200-931xx-Tahoe-ASIC-Drop-Counters-Description/ta-p/994494
 - `show hardware internal tah buffer counter`
 
