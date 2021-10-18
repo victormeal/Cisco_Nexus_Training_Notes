@@ -4,3 +4,8 @@ Burst traffic means that there are moments when the traffic trying to be sent th
 Oversubscription is easier to observe, as we can normally see a usage near to 10Gps with “show interface” outputs.
  
 The best way to address output discards is by creating port-channels for the affected single interfaces and add more members to the affected port-channels. 
+
+
+A partir de la 7.0(3)I7(7) y 9.2(4) se puede ver este log cuando se excede el uso de buffer sobre 90%
+
+<timestamp> <hostname> %TAHUSD-SLOT1-4-BUFFER_THRESHOLD_EXCEEDED: Module 1 Instance 0 Pool-group buffer 90 percent threshold is exceeded!
