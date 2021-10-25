@@ -16,5 +16,7 @@ interface port-channel4
   service-policy type qos input my_policy
   ```
 ```
-show policy-map my_policy 
+show policy-map my_policy
+show class-map my_class 
+show access-lists my_ACL
 ```
