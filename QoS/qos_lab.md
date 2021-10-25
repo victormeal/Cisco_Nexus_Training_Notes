@@ -15,3 +15,6 @@ interface port-channel4
   switchport trunk allowed vlan 1,26-27,60-61,69,90,97,405,1090
   service-policy type qos input my_policy
   ```
+```
+show policy-map my_policy 
+```
