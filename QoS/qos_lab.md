@@ -1,6 +1,6 @@
 
 
-
+```
 ip access-list my_ACL
   10 permit ip 192.168.90.1/32 192.168.90.2/32 
   20 permit ip 192.168.90.2/32 192.168.90.1/32 
@@ -14,3 +14,4 @@ interface port-channel4
   switchport mode trunk
   switchport trunk allowed vlan 1,26-27,60-61,69,90,97,405,1090
   service-policy type qos input my_policy
+  ```
