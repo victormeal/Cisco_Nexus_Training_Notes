@@ -24,3 +24,39 @@ Ethernet1/3     |.|.|.|.|.|.|.|.|.|.|.|X|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.|.
 
 I would like to either schedule a Webex to get a capture of traffic on the peer link. Let me know when you may be available, or if this is not an option, as I can prepare the commands need for the capture.
 I also would like to know if you are seeing similar drops along any of the links coming from the 7K pair or on it's peer-link.
+
+
+
+
+==============
+
+
+nswering question of customer :
+
+How to clear hardware drop counters and also any other command to get hardware drop counters or drop counters / drop reason.
+
+1)I understand that you have questions around the "show hardware internal interface asic counters module 1" command.
+
+As a general rule of thumb, show commands with internal keywords are not supported and detailed information regarding them is not available even for Cisco TAC. Such information could potentially be only available to the BU (engineering team which develops this component of the platform), but this is not public information.
+
+The closest command that would show hardware drops counters is "show hardware internal errors all", but this is also not supported and might not list all drops. In general, if the command contains "internal", this means that it's for internal Cisco use mainly.
+
+Reference SR:692249642
+
+
+Additionally when a particular drop reason is hit for the front panel interface the drop reason against the index will populate under section "Drop Conditions" of command output :
+show hardware internal interface asic counters module 1 , just like below output:
+
+Drop Conditions
+--------------- ---------------------------------------------------------------------------------------
+---------
+
+41 : TAHOE Ingress DROP_VLAN_XLATE_MISS
+51 : TAHOE Ingress DROP_SRC_VLAN_MBR
+67 : TAHOE Ingress DROP_ACL_DROP
+81 : TAHOE Ingress DROP_SPLIT_HORIZON_CHECK
+85 : TAHOE Ingress DROP_UC_PC_CFG_TABLE_DROP
+
+2)To clear drop counters , from lab :
+
+clear hardware internal interface-all asic counters module 1
