@@ -2,6 +2,15 @@
 
 - `show tech-support details > $(SWITCHNAME)-tech-details`
 
+## Basic health check
+- interface drops
+- copp drops
+- CPU utilization
+- MTS buffers
+- cores
+- loggs (logging log and nvram)
+- packet capture
+
 ## Hardware
 - `show enviroment`
 - `show inventory`
