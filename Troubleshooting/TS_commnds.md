@@ -255,6 +255,7 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `sh system internal mts buffers details`
 - `show system internal mts sup sap <> description`
 - `show system internal mts buffers summary `
+- `show ip traffic`
 
 ```
 attach mod 1
