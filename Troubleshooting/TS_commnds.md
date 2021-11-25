@@ -75,6 +75,10 @@ show port-channel internal event-history interface port-channel 10
 - `show ip arp detail`
 - `show ip arp detail | include x.x.x.x`
 
+## MAC Moves
+- `show logging level l2fm`
+- `show mac address-table notification mac-move`
+
 ## VLANs
 - `show vlan`
 - `show vlan bri`
