@@ -186,6 +186,12 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show ip protocols`
 - `show ip eigrp topology detail-links vrf all`
 
+## ISIS
+- `show run isis`
+- `show isis adjacency`
+- `show isis topology`
+- `show isis database detail`
+
 ## BGP
 - `show tech-support bgp detailed > $(SWITCHNAME)-tech-BGP`
 - `show tech-support routing ip unicast > $(SWITCHNAME)-tech-routing`
