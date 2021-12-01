@@ -259,6 +259,7 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show hardware internal buffer pkt-stats`
 - `sh system reset-reason `
 - `sh system internal mts buffers details`
+- `show system internal mts opcodes | i 86017`
 - `show system internal mts sup sap <> description`
 - `show system internal mts buffers summary `
 - `show ip traffic`
