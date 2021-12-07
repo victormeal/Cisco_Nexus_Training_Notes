@@ -18,6 +18,10 @@
 - `show hardware profile status`
 - `show environment temperature `
 
+## CPU (High utilization)
+- `show processes cpu history`
+- `show processes cpu sort`
+
 ### NX-OS/upgrade/Downgrade
 - `show upgrade history`
 - `show system reset-reason`
@@ -251,7 +255,6 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 ## Miscellaneous
 - `sh hardware capacity forwarding | b TCAM`
 - `show accounting log`
-- `show processes cpu history `
 - `show switching-mode `
 - `show systemr reset-reason`
 - `show system interal ethpm event-history interface e1/1`
