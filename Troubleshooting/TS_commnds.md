@@ -18,6 +18,11 @@
 - `show hardware profile status`
 - `show environment temperature `
 
+## TCAM
+- `show run all | i "tcam region"`
+- `show hardware access-list resource utilization`
+
+
 ## CPU (High utilization)
 - `show processes cpu history`
 - `show processes cpu sort`
