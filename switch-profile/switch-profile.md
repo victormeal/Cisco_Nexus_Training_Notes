@@ -144,8 +144,10 @@ interface port-channel99
 N3K-2(config-sync)# 
 ```
 + recovering previous config
-+ To remove switch-profile but not the config use `no switch-profile abc profile-only local`
-
++ To remove switch-profile but not the config use:
+```
+no switch-profile abc profile-only local`
+```
 ```
 N3K-2(config-sync)# no switch-profile abc local-config 
 
