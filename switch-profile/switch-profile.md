@@ -118,6 +118,7 @@ N3K-2(config-sync)# no switch-profile abc all-config
 WARNING: Deleting switch-profile will remove all commands configured under switch-profile. Are you sure you want to delete all switch-profile commands from the system ? 
 Are you sure? (y/n)  [n] Y
 ```
+```
 N3K-1(config-sync)# show run int po99
 
 !Command: show running-config interface port-channel99
