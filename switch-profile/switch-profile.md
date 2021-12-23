@@ -190,7 +190,7 @@ interface port-channel99
   switchport trunk allowed vlan 1-3
 
 N3K-2(config-sync)# 
-  ```
+```
 
 
 
