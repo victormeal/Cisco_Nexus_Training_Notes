@@ -26,6 +26,7 @@
 ## CPU (High utilization)
 - `show processes cpu history`
 - `show processes cpu sort`
+- check for cores, copp, mts, logs and packet caputre
 
 ### NX-OS/upgrade/Downgrade
 - `show upgrade history`
