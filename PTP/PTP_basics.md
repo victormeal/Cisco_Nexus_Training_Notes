@@ -11,4 +11,8 @@ Messages:
 
 Sync - Grand master clock sending the time
 Delay Request
+Follow up
 Delay Response
+
+In multicast - address is 224.0.1.129
+For both unicast and multicast - UDP port 319 (event messages) and 320 (general messages)
