@@ -3,7 +3,7 @@
 - `show tech-support details > $(SWITCHNAME)-tech-details`
 
 ## Basic health check
-- interface drops
+- interface drops - queueing drops
 - copp drops
 - CPU utilization
 - MTS buffers
