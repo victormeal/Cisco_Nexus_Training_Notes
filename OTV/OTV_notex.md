@@ -16,7 +16,7 @@ Encapsulation: Eth over MPLS over GRE over ipv4 unicast/multicast
 - Overlay Interface 
   - Logial OTV tunnel interface
 - OTV Join Interface
-  - Physical link or port-channel to route upstream to the DCI (Data Center Interconnect)  
+  - Physical link or port-channel or loopback to route upstream to the DCI (Data Center Interconnect)  
 - OTV Control Group
   - Multicast address used to discover the remote sites in the control plane
 - OTV Data Group
