@@ -1,5 +1,7 @@
 # OTV
 
+Encapsulation: Eth over MPLS over GRE over ipv4 unicast/multicast
+
 ## OTV Terminology
 - OTV Edge Device
   - Device running OTV feature 
