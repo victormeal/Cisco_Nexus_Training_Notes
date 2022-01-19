@@ -272,6 +272,14 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show system internal mts sup sap <> description`
 - `show system internal mts buffers summary `
 - `show ip traffic`
+- `show hardware internal forwarding table utilization`
+- `show ip route summary vrf all`
+- `show ip arp summary vrf all`
+- `show forwarding summary vrf all`
+- `show ip route vrf all`
+- `show ip arp vrf all`
+- `show forwarding vrf all`
+- `show system internal forwarding vrf all route`
 
 ```
 attach mod 1
