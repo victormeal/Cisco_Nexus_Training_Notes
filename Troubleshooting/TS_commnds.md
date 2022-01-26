@@ -76,6 +76,9 @@ show lacp internal event-history interface e3/1
 show system internal ethpm event-history interface port-channel 10
 show port-channel internal event-history interface port-channel 10
 ```
+## Port-channel
+- `show port-channel load-balance`
+- `show port-channel load-balance forwarding-path interface port-channel 37 src-ip 10.1.1.1 dst-ip 20.1.1.1`
 
 ## L2 Adjacency
 - `show cdp neighbors`
