@@ -81,5 +81,9 @@ show otv
 show otv isis adjacency
 show otv isis database
 show mac address-table
+
+show otv adjacency detail
+show otv vlan authoritative detail
+show otv site detail
 ```
 
