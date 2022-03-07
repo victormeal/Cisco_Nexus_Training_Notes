@@ -1,4 +1,9 @@
 # BFD
+## Check for...
+- agressive timers
+- timers match
+- no ip redirects
+----
 
 - show running-config bfd
 - show bfd neighbors [application name] [details]
