@@ -3,6 +3,7 @@
 - agressive timers
 - timers match
 - no ip redirects
+- en los N5K checkar si tienes BFD + BGP que tenga el neighbor `update-source <>`
 ----
 
 - show running-config bfd
