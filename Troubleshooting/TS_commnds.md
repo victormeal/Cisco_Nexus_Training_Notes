@@ -184,6 +184,7 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show ip route x.x.x.x`
 - `test consistency-checker forwarding`
 - `show consistency-checker forwarding `
+- `show hardware internal forwarding table utilization`
 
 ## OSPF
 - `show ip ospf`
