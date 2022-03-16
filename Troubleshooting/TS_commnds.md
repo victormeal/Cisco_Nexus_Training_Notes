@@ -250,7 +250,13 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show ip pim interface vlan 2 | i i DR`
 
 ## VXLAN
-- `sh nve interface nve 1 detail`
+- `Show vxlan`
+- `Show nve vni`
+- `Show nve interface nve1 detail`
+- `Show nve peers`
+- `sh bgp l2vpn evpn summary`
+- `h bgp l2vpn evpn neighbors 10.100.100.22 advertised-routes  | i 0035.1ac1.37c2 p 1 n 1`
+
 ### Flood n Learn with mutlicast
 - `show ip pim rp`
 - `show ip pim neig`
