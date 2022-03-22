@@ -10,6 +10,7 @@
 - cores
 - loggs (logging log and nvram)
 - packet capture
+- check MTU
 
 ## Hardware
 - `show enviroment`
