@@ -28,7 +28,7 @@ If you are not seeing all the packets being capture is possible that to prevent 
 (config-access-map)# exit
 (config)# monitor session 1
 (config-monitor)# no source interface <interface>
-(config-monitor)# no source interface <interface> rx
+(config-monitor)# source interface <interface> rx
 (config-monitor)# filter access-group span_filter
 (config-monitor)# exit
 
