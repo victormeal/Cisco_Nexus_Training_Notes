@@ -291,6 +291,7 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show ip arp vrf all`
 - `show forwarding vrf all`
 - `show system internal forwarding vrf all route`
+- `show diagnostic result module all detail`
 
 ```
 attach mod 1
