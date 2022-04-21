@@ -136,6 +136,8 @@ show port-channel internal event-history interface port-channel 10
 - `show fex detail`
 - `show interface port-channel 103 fex-intf`
 - `reload fex <number>`
+- `sh system internal fex log`
+
 
 ## NTP
 - `show ntp peers`
