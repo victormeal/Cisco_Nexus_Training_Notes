@@ -198,6 +198,8 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show ip ospf interface`
 - `show ip ospf summary-address`
 - `show ip ospf database`
+- `show ip ospf internal event-history hello`
+- `show ip ospf internal event-history adjacency`
 ## EIGRP
 - `show ip eigrp topology x.x.x.x`
 - `show ip protocols`
