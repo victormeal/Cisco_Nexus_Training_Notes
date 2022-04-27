@@ -298,6 +298,7 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show diagnostic result module all detail`
 - `diagnostic clear result module all`
 - `diagnostic start module 1 test all`
+- `show module internal exceptionlog`
 
 ```
 attach mod 1
