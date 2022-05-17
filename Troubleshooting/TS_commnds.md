@@ -217,6 +217,7 @@ https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/virtual_devic
 - `show run bgp`
 - `show ip bgp`
 - `show ip bgp neighbors`
+- `show ip bgp neighbors 10.58.144.33` 
 
 - `show bgp all`
 - `Show bgp vrf all all summary`
