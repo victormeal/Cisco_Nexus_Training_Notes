@@ -19,6 +19,12 @@
 - `show hardware profile status`
 - `show environment temperature `
 
+### Bootflash read-mode only
+- `show diagnostic result module all detail`
+- `diagnostic clear result module all`
+- `diagnostic start module 1 test all`
+- `show hardware internal bootflash model `
+
 ## TCAM
 - `show run all | i "tcam region"`
 - `show hardware access-list resource utilization`
