@@ -16,3 +16,18 @@ Delay Response
 
 In multicast - address is 224.0.1.129
 For both unicast and multicast - UDP port 319 (event messages) and 320 (general messages)
+
+## TS commands:
+
+```
+show ptp counters all
+show ptp brief
+show system intetrnal ptp info all
+show ptp corrections
+show ptp clock
+show ptp parent
+```
+```
+module level command
+show system internal ptplc info all
+```
