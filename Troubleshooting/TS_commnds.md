@@ -108,6 +108,7 @@ show port-channel internal event-history interface port-channel 10
 
 ## Spanning-tree
 - `show spanning-tree detail | i occurr|from|exec`
+- `show spanning-tree vlan 1 detail | i i occurr|from|exec`
 
 ## VTP
 - `show vtp status`
