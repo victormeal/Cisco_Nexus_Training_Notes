@@ -40,3 +40,21 @@ Let me know if you have any questions or comments.
 Regards.
 
 
+```
+ip access-list SPAN-to-CPU-ACL
+permit ip host 10.127.94.112 host 172.17.1.138
+permit ip host 172.17.1.138  host 10.127.94.112
+
+
+exit
+
+vlan access-map SPAN-to-CPU-filter
+match ip address SPAN-to-CPU-ACL
+action forward
+
+exit
+
+monitor session 10
+filter access-group SPAN-to-CPU-filter
+```
+
