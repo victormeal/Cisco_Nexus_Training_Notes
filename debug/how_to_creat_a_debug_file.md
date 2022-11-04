@@ -1,3 +1,5 @@
+# how_to_creat_a_debug_file
+```
 Nexus# debug logfile TEST101
 Nexus# debug ip ospf all
 Nexus# undebug all
@@ -18,3 +20,4 @@ Nexus# show debug logfile TEST101 > ?
               usb1: Destination filesystem path
               usb2: Destination filesystem path
               volatile: Destination filesystem path
+```
