@@ -75,6 +75,12 @@ show system internal port-client event-history port <port number>  | no-more
 ```
 - `show system internal ethpm event-history inter e1/45 | b "Fri Oct 23 12:13:06" | i i "triggered event" prev 2 next 2`
 
+## UDLD
+```
+show udld
+show udld internal event-history errors
+```
+
 ## LACP
 ```
 show lacp counters interface port-channel 10
