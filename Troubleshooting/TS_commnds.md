@@ -79,6 +79,7 @@ show system internal port-client event-history port <port number>  | no-more
 ```
 show udld
 show udld internal event-history errors
+show tech udld
 ```
 
 ## LACP
