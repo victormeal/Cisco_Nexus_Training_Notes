@@ -4,7 +4,7 @@
 ip access-list my_ACL
   10 permit ip 192.168.90.1/32 192.168.90.2/32 
   20 permit ip 192.168.90.2/32 192.168.90.1/32 
-class-map type qos match-all my_class
+class-map type qos match-any my_class
   match access-group name my_ACL
 policy-map type qos my_policy
   class my_class
