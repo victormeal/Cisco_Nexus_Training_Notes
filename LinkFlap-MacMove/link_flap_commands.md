@@ -31,6 +31,12 @@ Sh log
 Sh log nvram
 Sh tech (If possible)
 ```
+```
+NXOS 10.x
+show pie interface ethernet3/9 link-flap-rca detail
+show pie interface ethernet3/9 link-down-rca detail
+show pie interface ethernet3/9 transceiver-insights detail
+```
 felipe info
 ```
 Analysis for Link Flap 
