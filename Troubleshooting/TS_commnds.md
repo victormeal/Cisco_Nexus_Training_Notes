@@ -1,6 +1,7 @@
 # Troubleshooting commands
 
 - `show tech-support details > $(SWITCHNAME)-tech-details`
+- tac-pac snapshot log bootflash:
 
 ## Basic health check
 - interface drops - queueing drops
