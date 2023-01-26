@@ -12,3 +12,7 @@ https://cisco.sharepoint.com/sites/dcrs-mx/SitePages/Smart-Licensing.aspx
 
 Vincent notes - Smart Licensing OnPrem
 https://wiki.cisco.com/display/SJRP/Smart+Licensing+OnPrem+VM?src=contextnavpagetreemode
+
+Configure and Troubleshoot Smart Licensing on Nexus Platforms
+https://www.cisco.com/c/en/us/support/docs/ios-nx-os-software/nx-os-software/217965-smart-licensing-on-nexus-platforms.html
+
