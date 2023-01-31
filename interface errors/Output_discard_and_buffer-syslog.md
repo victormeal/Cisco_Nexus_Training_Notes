@@ -1,3 +1,7 @@
+# Buffer Threshold exceeded syslog
+
+https://www.cisco.com/c/en/us/support/docs/switches/nexus-9000-series-switches/217340-understand-the-tahusd-buffer-threshold-e.html
+
 # Output discards:
 Output discards happen when we have either burst traffic or oversubscription. 
 Burst traffic means that there are moments when the traffic trying to be sent through a 10G interface (for example) is more than 10 Gbps, when this happens Nexus will be using buffers but in these cases they are not enough to handle that amount of traffic and Nexus starts discarding packets. We will not see those moments in the “show interface” outputs because “input rate” and “output rate” are average per 30 seconds (Load-Interval #1) and 300 seconds (Load-Interval #2).
