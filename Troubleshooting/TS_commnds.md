@@ -58,6 +58,16 @@
 
 
 ## Interfaces and ports flapping
+
+```
+Show interface
+Show interface transceiver details
+Show logging log
+show system internal ethpm event-history int e1/9
+slot 1 show hardware internal tah event-history front-port 9
+slot 1 show system internal port-client event-history port 9
+```
+
 - `show lacp internal event-history int <module / port number> | no-more`
 - `show system internal ethpm event-history int <module / port number>  | no-more`
 ```
