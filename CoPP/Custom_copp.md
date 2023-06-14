@@ -27,3 +27,10 @@ Control-plane
 + From those steps, you can change the name to something else and change the CIR and BC values to what you want.
 + In case you want to go back to the default Strict policy you can use the command “copp profile strict.”
 + You can check, which policy-map is applied with the command “show policy-map interface control-plane”
+
+
+'Nexus 9000s with Cloud Scale ASIC have slow file transfer via inband due to CoPP'
+https://bst.cisco.com/bugsearch/bug/CSCvh45935
+
+To verify and remediate this condition, we then identified a non-production switch and created a custom CoPP policy to increase our allowed packet rate for SSH traffic to our CPU. Once complete, we immediately noticed an increase of SCP transfer speeds, verifying our condition.
+
